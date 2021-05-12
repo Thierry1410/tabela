@@ -65,9 +65,13 @@ var element_2 = {
     massa_atomica: "4,002602",
     ponto_de_fusao: "0,95 K (-272.2)",
     ponto_de_ebulicao: "4,22 K (-268,93",
+    serie_quimica: "Gases Nobres",
     de: "1s<sup>2</sup>", //  <sup>número</sup>
     aparencia: "Gás incolor (nas CNTP)",
-    img_atom: "/Imgs/Atomo/Helio.png"
+    img_atom: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Helium-Bohr.svg/220px-Helium-Bohr.svg.png",
+    amostra_texto: "<p>O Hélio, conhecido por, quando aspirado por uma pessoa, afinar a sua voz, também tem usos medicinais, é usado para explorar o oceano, resfriar reatores nucleares e animar festas de aniversário. Este gás nobre tem densidade menor que o ar atmosférico, e não é inflámavel! <a>Ler mais...</a></p>",
+    eletronegatividade: "-",
+    ano_descoberta: "1868"
 }
 var element_3 = {
     nome: "Lítio",
@@ -126,6 +130,9 @@ var ClearTable = function() {
     distr.innerHTML = "";
     nome_do_elemento.innerHTML = "";
     amostra_texto.innerHTML = "";
+    eletronegatividade.innerHTML = "";
+    ano_descoberta.innerHTML = "";
+    document.getElementById('imagem-informacoes').innerHTML = "";
 }
 
 var FazerTudo = function(element) {
