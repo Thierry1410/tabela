@@ -52,7 +52,7 @@ var element_1 = {
     ponto_de_ebulicao: "20,28 K (-252,87°C)",
     de: "1s<sup>1</sup>",
     aparencia: "Gás incolor (nas CNTP)",
-    img_atom: "C:/Users/Thierry/Documents/GitHub/PPI/Imgs/Atomo/H.png",
+    img_atom: "https://static.mundoeducacao.uol.com.br/mundoeducacao/conteudo_legenda/a8f97734c68a417a0e7201e1006fe622.jpg",
     serie_quimica: "Não-metal",
     eletronegatividade: "2,2",
     ano_descoberta: "1781",
