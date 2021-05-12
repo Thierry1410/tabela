@@ -394,3 +394,50 @@
 .element_caption_10:before {
     background: #4db6ac
 }
+
+@media (max-width:1500px) {
+    #tabela-periodica {
+        margin: 20px 0;
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap
+    }
+    #tabela-periodica .tabela-wrapper {
+        margin: 0 20px;
+        width: 968px;
+        position: relative
+    }
+    #tabela-periodica .tabela-wrapper * {
+        white-space: normal
+    }
+}
+
+@media (max-width:991px) {
+    #tabela-periodica-container {
+        margin-left: -15px;
+        margin-right: -15px
+    }
+}
+
+@media (max-width:1199px) {
+    .elements_captions {
+        -moz-column-count: 4;
+        column-count: 4;
+        padding: 0 20px 20px
+    }
+}
+
+@media (max-width:767px) {
+    .elements_captions {
+        -moz-column-count: 3;
+        column-count: 3
+    }
+}
+
+@media (max-width:540px) {
+    .elements_captions {
+        -moz-column-count: 2;
+        column-count: 2
+    }
+}
