@@ -138,21 +138,24 @@ var ClearTable = function() {
 var FazerTudo = function(element) {
     detalhes.classList.remove("n-display");
     ClearTable()
-    aparencia.insertAdjacentText("afterbegin", element.aparencia);
+
+
+    nome_do_elemento.insertAdjacentText("afterbegin", element.nome);
+    distr.insertAdjacentHTML("afterbegin", element.de);
     massa_atomica.insertAdjacentText("afterbegin", element.massa_atomica);
+    serie_quimica.insertAdjacentText("afterbegin", element.serie_quimica);
+    eletronegatividade.insertAdjacentText("afterbegin", element.eletronegatividade);
     ponto_de_fusao.insertAdjacentText("afterbegin", element.ponto_de_fusao);
     ponto_de_ebulicao.insertAdjacentText("afterbegin", element.ponto_de_ebulicao);
-    serie_quimica.insertAdjacentText("afterbegin", element.serie_quimica);
-    distr.insertAdjacentHTML("afterbegin", element.de);
-    nome_do_elemento.insertAdjacentText("afterbegin", element.nome);
-    eletronegatividade.insertAdjacentText("afterbegin", element.eletronegatividade);
+    aparencia.insertAdjacentText("afterbegin", element.aparencia);
     ano_descoberta.insertAdjacentText("afterbegin", element.ano_descoberta);
 
-    amostra_texto.insertAdjacentHTML("afterbegin", element.amostra_texto);
 
     var img = document.createElement("IMG");
     img.src = element.img_atom;
     document.getElementById('imagem-informacoes').appendChild(img);
+    amostra_texto.insertAdjacentHTML("afterbegin", element.amostra_texto);
+
     informacoes.classList.remove("n-display");
 
 };
