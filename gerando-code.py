@@ -8,5 +8,17 @@ for i in range(1, 120):
     """
 
 
-for i in range(6, 34):
-    print("element_"+str(i)+": {\nnome: '',\nmassa_atomica:'',\nponto_de_fusao:'',\nponto_de_ebulicao:'',\nde:'',\naparencia:'',\nimg_atom:'',\nserie_quimica:'',\neletronegatividade:'',\nano_descoberta:'',\namostra_texto: ''},")
+for i in range(49, 74):
+
+    
+    a = ""
+    b = ""
+    c = ""
+    d = ""
+    g = ""
+    e = ""
+    f = ""
+    
+    
+    print("element_"+str(i)+": {\nnome: '"+a+"',\nmassa_atomica:'"+b+"',\nponto_de_fusao:'"+c+"°C',\nponto_de_ebulicao:'"+d+"°C',\nde:'',\nimg_atom:'"+e+"',\nserie_quimica:'"+f+"',\neletronegatividade: '"+g+"'},\n")
+    

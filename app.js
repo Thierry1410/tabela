@@ -483,12 +483,10 @@ element_118.addEventListener('click', function() {
 const informacoes = document.querySelector("#informacoes-tabela")
 const detalhes = document.querySelector("#detalhes");
 const distr = document.querySelector(".subtitle");
-const aparencia = document.querySelector('#aparencia');
 const nome_do_elemento = document.querySelector('.title');
 const ponto_de_fusao = document.querySelector('#ponto_de_fusao');
 const img = document.getElementsByClassName(".image is-4by4");
-const eletronegatividade = document.getElementById("eletronegatividade")
-const ano_descoberta = document.getElementById("ano_descoberta")
+const eletronegatividade = document.querySelector("#eletronegatividade")
 const amostra_texto = document.getElementById("amostra-texto")
 
 /*
@@ -514,15 +512,18 @@ var element_1 = {
 
 // obj com todas as informações que vão na tabela
 
+
+
+
 var obj = {
     element_1: {
         nome: "Hidrogênio",
-        massa_atomica: 1.0008,
-        ponto_de_fusao: "14,025 K (-259,2°C)",
-        ponto_de_ebulicao: "20,28 K (-252,87°C)",
+        massa_atomica: "1,0008",
+        ponto_de_fusao: "-259°C",
+        ponto_de_ebulicao: "-253°C",
         de: "1s<sup>1</sup>",
-        aparencia: "Gás incolor (nas CNTP)",
-        img_atom: "/Imgs/Tabela/Hidrogenio.png",
+        aparencia: "Gás incolor",
+        img_atom: "",
         serie_quimica: "Não-metal",
         eletronegatividade: "2,2",
         ano_descoberta: "1781",
@@ -532,27 +533,27 @@ var obj = {
 
     element_2: {
         nome: "Hélio",
-        massa_atomica: "4,002602",
-        ponto_de_fusao: "0,95 K (-272.2)",
-        ponto_de_ebulicao: "4,22 K (-268,93",
+        massa_atomica: "4,0",
+        ponto_de_fusao: "-272°C",
+        ponto_de_ebulicao: "-269°C",
         serie_quimica: "Gases Nobres",
         de: "1s<sup>2</sup>", //  <sup>número</sup>
-        aparencia: "Gás incolor (nas CNTP)",
-        img_atom: "/Imgs/Tabela/Helio.png",
+        aparencia: "Gás incolor",
+        img_atom: "",
         amostra_texto: "<p>O Hélio, conhecido por, quando aspirado por uma pessoa, afinar a sua voz, também tem usos medicinais, é usado para explorar o oceano, resfriar reatores nucleares e animar festas de aniversário. Este gás nobre tem densidade menor que o ar atmosférico, e não é inflámavel! <a>Ler mais...</a></p>",
         eletronegatividade: "-",
         ano_descoberta: "1868"
     },
     element_3: {
         nome: "Lítio",
-        massa_atomica: "6,941",
-        ponto_de_fusao: "0)",
-        ponto_de_ebulicao: "203123,28 K (-312387°C)",
+        massa_atomica: "6,938",
+        ponto_de_fusao: "180°C",
+        ponto_de_ebulicao: "1336°C",
         de: "1s<sup>2</sup>2s<sup>2",
-        aparencia: "Gás inc323olor (na CNTP)",
-        img_atom: "/Imgs/Tabela/Lítio.png",
-        serie_quimica: '',
-        eletronegatividade: '',
+        aparencia: "",
+        img_atom: "",
+        serie_quimica: 'Metal Alcalino',
+        eletronegatividade: '1,0',
         ano_descoberta: '',
         amostra_texto: ''
     }
@@ -566,9 +567,8 @@ var obj = {
         de: "1s<sup>2</sup>2s<sup>2</sup>", //<sup>número</sup> para colocar o numero superescrito
         aparencia: "Sólido, Cinza Metálico", // aparencia na CNTP
         img_atom: "/Imgs/Tabela/Berílio.png",
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        serie_quimica: 'Alcalino Terrosos',
+        eletronegatividade: '1,5',
         amostra_texto: ''
 
     },
@@ -580,1501 +580,1566 @@ var obj = {
         de: "1s<sup>2</sup>2s<sup>2</sup>2p<sup>1</sup>",
         aparencia: "Sólido, Marrom/Preto",
         img_atom: "/Imgs/Tabela/Boro.png",
-        serie_quimica: '',
-        eletronegatividade: '',
+        serie_quimica: 'Não-Metais',
+        eletronegatividade: '2,0',
         ano_descoberta: '',
         amostra_texto: ''
 
     },
     element_6: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        nome: 'Carbono',
+        massa_atomica: '12,0116',
+        ponto_de_fusao: '3500°C',
+        ponto_de_ebulicao: '4830°C',
+        de: '2s<sup>2</sup>2p<sup>3</sup>',
+        aparencia: 'Preto (carvão/grafite)',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.i68ZGC3W_Rq-cl97pSjWowHaFj%26pid%3DApi&f=1',
+        serie_quimica: 'Não-Metais',
+        eletronegatividade: '2,5',
         amostra_texto: ''
     },
     element_7: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        nome: 'Nitrogênio',
+        massa_atomica: '14,0096',
+        ponto_de_fusao: '-210°C',
+        ponto_de_ebulicao: '-196°C',
+        de: '2s²2p³',
+        aparencia: 'Gás Incolor',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.uhAADB_LAko_9tOdtI2idQAAAA%26pid%3DApi&f=1',
+        serie_quimica: 'Não-Metais',
+        eletronegatividade: '3,0',
         amostra_texto: ''
     },
     element_8: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        nome: 'Oxigênio',
+        massa_atomica: '15,990',
+        ponto_de_fusao: '-222°C',
+        ponto_de_ebulicao: '-183°C',
+        de: '2s²2p<sup>4</sup>',
+        aparencia: 'Gás Incolor',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.YZrPvIRmWrCg4IaKjpqd8gAAAA%26pid%3DApi&f=1',
+        serie_quimica: 'Não-Metais',
+        eletronegatividade: '3,5',
         amostra_texto: ''
     },
     element_9: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        nome: 'Flúor',
+        massa_atomica: '19',
+        ponto_de_fusao: '-220°C',
+        ponto_de_ebulicao: '-183°C',
+        de: '2s²2p<sup>5</sup>',
+        aparencia: 'Gás Amarelo Pálido',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.KDDbNnfnTF3jgmH8LLxQzQHaFj%26pid%3DApi&f=1',
+        serie_quimica: 'Não-Metais',
+        eletronegatividade: '4,0',
         amostra_texto: ''
     },
     element_10: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        nome: 'Nêonio',
+        massa_atomica: '20,18',
+        ponto_de_fusao: '-249°C',
+        ponto_de_ebulicao: '-246°C',
+        de: '2s²2p<sup>6</sup>',
+        aparencia: 'Gás Incolor',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.UIfxR4D1T5cXqn5jwafVPgHaHa%26pid%3DApi&f=1',
+        serie_quimica: 'Gases Nobres',
+        eletronegatividade: '--',
         amostra_texto: ''
     },
     element_11: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_12: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_13: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_14: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_15: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_16: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_17: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_18: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_19: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_20: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_21: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_22: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_23: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_24: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_25: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_26: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_27: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_28: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_29: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_30: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_31: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_32: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-    element_33: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        nome: 'Sódio',
+        massa_atomica: '22,99',
+        ponto_de_fusao: '98°C',
+        ponto_de_ebulicao: '892°C',
+        de: '3s¹',
+        aparencia: 'Metal Prateado',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.52CHcmCQapoMo8b_PapccwHaFj%26pid%3DApi&f=1',
+        serie_quimica: 'Metais Alcalinos',
+        eletronegatividade: '0,9',
         amostra_texto: ''
     },
 
+    element_12: {
+        nome: 'Magnésio',
+        massa_atomica: '24,30',
+        ponto_de_fusao: '650°C',
+        ponto_de_ebulicao: '1107°C',
+        de: '3s²',
+        aparencia: 'Prateada',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.cRIqIcSTS0r0xdYkKzXxrAHaFb%26pid%3DApi&f=1',
+        serie_quimica: 'Alcalino Terrosos',
+        eletronegatividade: '1,3',
+        amostra_texto: ''
+    },
+    element_13: {
+        nome: 'Alumínio',
+        massa_atomica: '26,98',
+        ponto_de_fusao: '660°C',
+        ponto_de_ebulicao: '2450°C',
+        de: '3s²3p¹',
+        aparencia: 'Cinza-prateado fosco',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Gkr2zZtmDljqtsVJfhfECAHaD7%26pid%3DApi&f=1',
+        serie_quimica: 'Metais Representativos',
+        eletronegatividade: '1,6',
+        amostra_texto: ''
+    },
+    element_14: {
+        nome: 'Silício',
+        massa_atomica: '28,086',
+        ponto_de_fusao: '1410°C',
+        ponto_de_ebulicao: '2350°C',
+        de: '3s²3p²',
+        aparencia: 'Cinza azulado escuro',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.sDKA5mYuNsVyR30zlfMw8AHaIy%26pid%3DApi&f=1',
+        serie_quimica: 'Não-Metais',
+        eletronegatividade: '3s²3p²',
+        amostra_texto: ''
+    },
+    element_15: {
+        nome: 'Fósforo',
+        massa_atomica: '30,97',
+        ponto_de_fusao: '44°C',
+        ponto_de_ebulicao: '280°C',
+        de: '3s²3p³',
+        aparencia: 'Várias formas',
+        img_atom: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/PhosphComby.jpg/375px-PhosphComby.jpg',
+        serie_quimica: 'Não-Metais',
+        eletronegatividade: '2,1',
+        amostra_texto: ''
+    },
+    element_16: {
+        nome: 'Enxofre',
+        massa_atomica: '32,059',
+        ponto_de_fusao: '115°C',
+        ponto_de_ebulicao: '445°C',
+        de: '3s²3p<sup>4</sup>',
+        aparencia: 'Amarelo Limão',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.WX6XqbJ-xGSAN-6rg_GObAHaHa%26pid%3DApi&f=1',
+        serie_quimica: 'Não-metais',
+        eletronegatividade: '2,5',
+        amostra_texto: ''
+    },
+    element_17: {
+        nome: 'Cloro',
+        massa_atomica: '35,446',
+        ponto_de_fusao: '-101°C',
+        ponto_de_ebulicao: '-35°C',
+        de: '3s²3p<sup>5</sup>',
+        aparencia: 'Verde-amarelado',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.fQm28NZcM5GZ8z5tZdUHigHaHa%26pid%3DApi&f=1',
+        serie_quimica: 'Não-metais',
+        eletronegatividade: '3,1',
+        amostra_texto: ''
+    },
+    element_18: {
+        nome: 'Argônio',
+        massa_atomica: '39,95',
+        ponto_de_fusao: '-189°C',
+        ponto_de_ebulicao: '-186°C',
+        de: '3s²3p<sup>6</sup>',
+        aparencia: 'Incolor',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ShEdTQceE4i-j5LHQqQtmAHaC0%26pid%3DApi&f=1',
+        serie_quimica: 'Gases Nobres',
+        eletronegatividade: '--',
+        amostra_texto: ''
+    },
+    element_19: {
+        nome: 'Potássio',
+        massa_atomica: '39,10',
+        ponto_de_fusao: '64°C',
+        ponto_de_ebulicao: '774°C',
+        de: '4s¹',
+        aparencia: 'Branco prateado',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.lTndZQc3W7b4xjBW6FZzYAAAAA%26pid%3DApi&f=1',
+        serie_quimica: 'Metais Alcalinos',
+        eletronegatividade: '0,8',
+        amostra_texto: ''
+    },
+    element_20: {
+        nome: 'Cálcio',
+        massa_atomica: '40,08',
+        ponto_de_fusao: '839°C',
+        ponto_de_ebulicao: '1440°C',
+        de: '4s²',
+        aparencia: 'Branco-prateado',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.I0d5WTRtHSlRKI0RCO7rYAHaE7%26pid%3DApi&f=1',
+        serie_quimica: 'Alcalinos Terrosos',
+        eletronegatividade: '1,3',
+        amostra_texto: ''
+    },
+    element_21: {
+        nome: 'Escândio',
+        massa_atomica: '44,96',
+        ponto_de_fusao: '1539°C',
+        ponto_de_ebulicao: '2730°C',
+        de: '4s²3d¹',
+        aparencia: 'Branco prateado',
+        img_atom: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Scandium_sublimed_dendritic_and_1cm3_cube.jpg/375px-Scandium_sublimed_dendritic_and_1cm3_cube.jpg',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '4s²3d¹',
+        amostra_texto: ''
+    },
+    element_22: {
+        nome: 'Titânio',
+        massa_atomica: '47,87',
+        ponto_de_fusao: '1660°C',
+        ponto_de_ebulicao: '3277°C',
+        de: '3d²4s²',
+        aparencia: 'Branco Metálico',
+        img_atom: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Titan-crystal_bar.JPG/375px-Titan-crystal_bar.JPG',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '1,5',
+        amostra_texto: ''
+    },
+    element_23: {
+        nome: 'Vanádio',
+        massa_atomica: '50,94',
+        ponto_de_fusao: '1902°C',
+        ponto_de_ebulicao: '3377°C',
+        de: '4s²3d²',
+        aparencia: 'cinza-azulado-prateado metálico',
+        img_atom: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vanadium_crystal_bar_and_1cm3_cube.jpg/1280px-Vanadium_crystal_bar_and_1cm3_cube.jpg',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '1,61',
+        amostra_texto: ''
+    },
+    element_24: {
+        nome: 'Cromo',
+        massa_atomica: '52',
+        ponto_de_fusao: '1857°C',
+        ponto_de_ebulicao: '2627°C',
+        de: '4s¹3d<sup>5</sup>',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.g-0gHGjrbDtFuXQebZP5WgHaHa%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '1,6',
+        amostra_texto: ''
+    },
+    element_25: {
+        nome: 'Manganês',
+        massa_atomica: '54,94',
+        ponto_de_fusao: '1244°C',
+        ponto_de_ebulicao: '2067°C',
+        de: '',
+
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.cVR8WOtY-XUjIR1PM2Z-cAHaEm%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '1,5',
+        amostra_texto: ''
+    },
+    element_26: {
+        nome: 'Ferro',
+        massa_atomica: '55,85',
+        ponto_de_fusao: '1536°C',
+        ponto_de_ebulicao: '3000°C',
+        de: '',
+
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.AL4be9hdeepEbomuK-W6wQAAAA%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '1,8',
+        amostra_texto: ''
+    },
+
+    element_27: {
+        nome: 'Cobalto',
+        massa_atomica: '58,93',
+        ponto_de_fusao: '1495°C',
+        ponto_de_ebulicao: '2877°C',
+        de: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.DNtu9_0EJbqG0SqHmRIjMAHaHa%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '1,8',
+        amostra_texto: ''
+    },
+    element_28: {
+        nome: 'Níquel',
+        massa_atomica: '58,69',
+        ponto_de_fusao: '1455°C',
+        ponto_de_ebulicao: '2887°C',
+        de: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Y0_Rxym9QEtxf8UjqSIPjgHaFL%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '1,9',
+        amostra_texto: ''
+    },
+    element_29: {
+        nome: 'Cobre',
+        massa_atomica: '63,55',
+        ponto_de_fusao: '1083°C',
+        ponto_de_ebulicao: '2582°C',
+        de: '',
+
+        img_atom: '',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '1,9',
+        amostra_texto: ''
+    },
+    element_30: {
+        nome: 'Zinco',
+        massa_atomica: '65,41',
+        ponto_de_fusao: '1083°C',
+        ponto_de_ebulicao: '2582°C',
+        de: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.h52TjAIObIvlzOxwuWfaGAHaE7%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '1,6',
+        amostra_texto: ''
+    },
+    /*
+    Nome do Elemento: Gálio
+    Massa Atômica: 69,72
+    Ponto de Fusão: 30
+    Ponto de Ebulição: 2403
+    Imagem: 1,8
+    Serie Química: Metais Representativos
+    Eletronegatividade: 1,8
+    */
+    element_31: {
+        nome: 'Gálio',
+        massa_atomica: '69,72',
+        ponto_de_fusao: '30°C',
+        ponto_de_ebulicao: '2403°C',
+        de: '',
+        img_atom: '1,8',
+        serie_quimica: 'Metais Representativos',
+        eletronegatividade: '1,8',
+        amostra_texto: ''
+    },
+    /*
+    Nome do Elemento: Germânio      
+    Massa Atômica: 72,64
+    Ponto de Fusão: 937 
+    Ponto de Ebulição: 2830
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Czot8LeFdqSMvLwF7H_5fwAAAA%26pid%3DApi&f=1    
+    Serie Química: Metais Representativos
+    Eletronegatividade: 2,0
+    */
+    element_32: {
+        nome: 'Germânio',
+        massa_atomica: '72,64',
+        ponto_de_fusao: '937°C',
+        ponto_de_ebulicao: '2830°C',
+        de: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Czot8LeFdqSMvLwF7H_5fwAAAA%26pid%3DApi&f=1',
+        serie_quimica: 'Metais Representativos',
+        eletronegatividade: '2,0',
+        amostra_texto: ''
+    },
+    /*
+    Nome do Elemento: Arsênio
+    Massa Atômica: 74,92
+    Ponto de Fusão: 817
+    Ponto de Ebulição: 887
+    Imagem: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Arsen_1a.jpg/345px-Arsen_1a.jpg
+    Serie Química: Não-Metais
+    Eletronegatividade: 2,1
+    */
+    element_33: {
+        nome: 'Arsênio',
+        massa_atomica: '74,92',
+        ponto_de_fusao: '817°C',
+        ponto_de_ebulicao: '887°C',
+        de: '',
+        img_atom: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Arsen_1a.jpg/345px-Arsen_1a.jpg',
+        serie_quimica: 'Não-Metais',
+        eletronegatividade: '2,1',
+        amostra_texto: ''
+    },
+    /*
+    Nome do Elemento: Selênio
+    Massa Atômica: 78,96
+    Ponto de Fusão: 221
+    Ponto de Ebulição: 687
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.8fufKJJ_f--z5gzOIjqU_QHaHa%26pid%3DApi&f=1
+    Serie Química: Não-Metais
+    Eletronegatividade: 2,5
+    */
     element_34: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Selênio',
+        massa_atomica: '78,96',
+        ponto_de_fusao: '221°C',
+        ponto_de_ebulicao: '687°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.8fufKJJ_f--z5gzOIjqU_QHaHa%26pid%3DApi&f=1',
+        serie_quimica: 'Não-Metais',
+        eletronegatividade: '2,5',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Bromo
+    Massa Atômica: 79,90
+    Ponto de Fusão: -7
+    Ponto de Ebulição: 58
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.PdNwrMFcZLNOT_xe7M1foQHaJ8%26pid%3DApi&f=1
+    Serie Química: Não-Metais
+    Eletronegatividade: 2,9
+    */
     element_35: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Bromo',
+        massa_atomica: '79,90',
+        ponto_de_fusao: '-7°C',
+        ponto_de_ebulicao: '58°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.PdNwrMFcZLNOT_xe7M1foQHaJ8%26pid%3DApi&f=1',
+        serie_quimica: 'Não-Metais',
+        eletronegatividade: '2,9',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Criptônio
+    Massa Atômica: 83,80
+    Ponto de Fusão: -157
+    Ponto de Ebulição: -153
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.I3uykRzGrGbuqqsWBKWswwAAAA%26pid%3DApi&f=1
+    Serie Química: Gases Nobres
+    Eletronegatividade: --
+    */
     element_36: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Criptônio',
+        massa_atomica: '83,80',
+        ponto_de_fusao: '-157°C',
+        ponto_de_ebulicao: '-153°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.I3uykRzGrGbuqqsWBKWswwAAAA%26pid%3DApi&f=1',
+        serie_quimica: 'Gases Nobres',
+        eletronegatividade: '--',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Rubídio
+    Massa Atômica: 85,47
+    Ponto de Fusão: 39
+    Ponto de Ebulição: 688
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.l798JEIBM6YMVTqwpiKLigHaFh%26pid%3DApi&f=1
+    Serie Química: Metais Alcalinos
+    Eletronegatividade: 0,8
+    */
     element_37: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Rubídio',
+        massa_atomica: '85,47',
+        ponto_de_fusao: '39°C',
+        ponto_de_ebulicao: '688°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.l798JEIBM6YMVTqwpiKLigHaFh%26pid%3DApi&f=1',
+        serie_quimica: 'Metais Alcalinos',
+        eletronegatividade: '0,8',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Estrôncio
+    Massa Atômica: 87,62
+    Ponto de Fusão: 770
+    Ponto de Ebulição: 1380
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.PTHoB7No58i_odis63cmHwHaD_%26pid%3DApi&f=1
+    Serie Química: Alcalinos Terrosos
+    Eletronegatividade: 1,0
+    */
     element_38: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Estrôncio',
+        massa_atomica: '87,62',
+        ponto_de_fusao: '770°C',
+        ponto_de_ebulicao: '1380°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.PTHoB7No58i_odis63cmHwHaD_%26pid%3DApi&f=1',
+        serie_quimica: 'Alcalinos Terrosos',
+        eletronegatividade: '1,0',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Ítrio
+    Massa Atômica: 88,91
+    Ponto de Fusão: 1526
+    Ponto de Ebulição: 2927
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.65CxcqJOkDDu32uuG8I9eQHaE8%26pid%3DApi&f=1
+    Serie Química: Metais de Transição
+    Eletronegatividade: 1,2
+    */
     element_39: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Ítrio',
+        massa_atomica: '88,91',
+        ponto_de_fusao: '1526°C',
+        ponto_de_ebulicao: '2927°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.65CxcqJOkDDu32uuG8I9eQHaE8%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '1,2',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Zircônio
+    Massa Atômica: 1852
+    Ponto de Fusão: 3580
+    Ponto de Ebulição: 1852
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.RUO7lRNI_A-9legiDs6LOQHaGR%26pid%3DApi&f=1
+    Serie Química: Metais de Transição
+    Eletronegatividade: 1,3
+    */
     element_40: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Zircônio',
+        massa_atomica: '91,22',
+        ponto_de_fusao: '1852°C',
+        ponto_de_ebulicao: '3580°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.RUO7lRNI_A-9legiDs6LOQHaGR%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '1,3',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Nióbio
+    Massa Atômica: 92,91
+    Ponto de Fusão: 2468
+    Ponto de Ebulição: 4930
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.E_YJgkEUwiYOToJdZAVW5QHaEK%26pid%3DApi&f=1
+    Serie Química: Metais de Transição
+    Eletronegatividade: 1,6
+    */
     element_41: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Nióbio',
+        massa_atomica: '92,91',
+        ponto_de_fusao: '2468°C',
+        ponto_de_ebulicao: '4930°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.E_YJgkEUwiYOToJdZAVW5QHaEK%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '1,6',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Molibdênio
+    Massa Atômica: 95,94
+    Ponto de Fusão: 2617
+    Ponto de Ebulição: 5560
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.tfmeolnOQQ67ezce6MyyAgHaEs%26pid%3DApi&f=1
+    Serie Química: Metais de Trabsição
+    Eletronegatividade: 2,1
+    */
     element_42: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Molibdênio',
+        massa_atomica: '95,94',
+        ponto_de_fusao: '2617°C',
+        ponto_de_ebulicao: '5560°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.tfmeolnOQQ67ezce6MyyAgHaEs%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Trabsição',
+        eletronegatividade: '2,1',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Tecnécio
+    Massa Atômica: 98
+    Ponto de Fusão: 2200
+    Ponto de Ebulição: --
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.w8Eq4J2mAbuew_-fnPDXXAHaDt%26pid%3DApi&f=1
+    Serie Química: Metais de Transição
+    Eletronegatividade: 1,9
+    */
     element_43: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Tecnécio',
+        massa_atomica: '98',
+        ponto_de_fusao: '2200°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.w8Eq4J2mAbuew_-fnPDXXAHaDt%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '1,9',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Rutênio
+    Massa Atômica: 101,07
+    Ponto de Fusão: 2250
+    Ponto de Ebulição: 3727
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ISzZXbp688p66P_sLBHbYwHaHK%26pid%3DApi&f=1
+    Serie Química: Metais de Transição
+    Eletronegatividade: 2,2
+    */
     element_44: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Rutênio',
+        massa_atomica: '101,07',
+        ponto_de_fusao: '2250°C',
+        ponto_de_ebulicao: '3727°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ISzZXbp688p66P_sLBHbYwHaHK%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '2,2',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Ródio
+    Massa Atômica: 102,91
+    Ponto de Fusão: 1965
+    Ponto de Ebulição: 3720
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.yCqr2Xp7lvO-O7IXUgdtxAHaE9%26pid%3DApi&f=1
+    Serie Química: Metais de Transição
+    Eletronegatividade: 2,2
+    */
     element_45: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Ródio',
+        massa_atomica: '102,91',
+        ponto_de_fusao: '1965°C',
+        ponto_de_ebulicao: '3720°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.yCqr2Xp7lvO-O7IXUgdtxAHaE9%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '2,2',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Paládio
+    Massa Atômica: 106,42
+    Ponto de Fusão: 1555
+    Ponto de Ebulição: 3027
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.WT8k5E8z07pAzVCy78jsgAHaGi%26pid%3DApi&f=1
+    Serie Química: Metais de Transição
+    Eletronegatividade: 2,2
+    */
     element_46: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Paládio',
+        massa_atomica: '106,42',
+        ponto_de_fusao: '1555°C',
+        ponto_de_ebulicao: '3027°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.WT8k5E8z07pAzVCy78jsgAHaGi%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '2,2',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Prata
+    Massa Atômica: 107,87
+    Ponto de Fusão: 961
+    Ponto de Ebulição: 2212
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.NH2nM0g5BvGma8IW1tYhPgHaFE%26pid%3DApi&f=1
+    Serie Química: Metais de Transição
+    Eletronegatividade: 1,9
+    */
     element_47: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Prata',
+        massa_atomica: '107,87',
+        ponto_de_fusao: '961°C',
+        ponto_de_ebulicao: '2212°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.NH2nM0g5BvGma8IW1tYhPgHaFE%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '1,9',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Cádmio
+    Massa Atômica: 112,41
+    Ponto de Fusão: 321
+    Ponto de Ebulição: 767
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.0h4Mg7ajhscIOsrIP2pROwHaEP%26pid%3DApi&f=1
+    Serie Química: Metais de Transição
+    Eletronegatividade: 1,9
+    */
     element_48: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Cádmio',
+        massa_atomica: '112,41',
+        ponto_de_fusao: '321°C',
+        ponto_de_ebulicao: '767°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.0h4Mg7ajhscIOsrIP2pROwHaEP%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '1,9',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Índio
+    Massa Atômica: 114,82
+    Ponto de Fusão: 156
+    Ponto de Ebulição: 2027
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.RxHTGb2ccpAxwCOfY6dd_AHaE-%26pid%3DApi&f=1
+    Serie Química: Metais Representativos
+    Eletronegatividade: 1,5
+    */
     element_49: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Índio',
+        massa_atomica: '114,82',
+        ponto_de_fusao: '156°C',
+        ponto_de_ebulicao: '2027°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.RxHTGb2ccpAxwCOfY6dd_AHaE-%26pid%3DApi&f=1',
+        serie_quimica: 'Metais Representativos',
+        eletronegatividade: '1,5',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Estanho
+    Massa Atômica: 118,71
+    Ponto de Fusão: 232
+    Ponto de Ebulição: 2270
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.uiPxZ74m03ZMX13HNKgbcQHaHa%26pid%3DApi&f=1
+    Serie Química: Metais Representativos
+    Eletronegatividade: 1,9
+    */
     element_50: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Estanho',
+        massa_atomica: '118,71',
+        ponto_de_fusao: '232°C',
+        ponto_de_ebulicao: '2270°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.uiPxZ74m03ZMX13HNKgbcQHaHa%26pid%3DApi&f=1',
+        serie_quimica: 'Metais Representativos',
+        eletronegatividade: '1,9',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Antimônio
+    Massa Atômica: 121,76
+    Ponto de Fusão: 630
+    Ponto de Ebulição: 1577
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.JvbIioM_ulbWTNFiCC7vDAHaHa%26pid%3DApi&f=1
+    Serie Química: Metais Representativos
+    Eletronegatividade: 2,0
+    */
     element_51: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Antimônio',
+        massa_atomica: '121,76',
+        ponto_de_fusao: '630°C',
+        ponto_de_ebulicao: '1577°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.JvbIioM_ulbWTNFiCC7vDAHaHa%26pid%3DApi&f=1',
+        serie_quimica: 'Metais Representativos',
+        eletronegatividade: '2,0',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Telúrio
+    Massa Atômica: 127,60
+    Ponto de Fusão: 271
+    Ponto de Ebulição: 987
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.GEE96kCrl0i4pyUoj2QAVAHaEP%26pid%3DApi&f=1
+    Serie Química: Não-Metais
+    Eletronegatividade: 2,1
+    */
     element_52: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Telúrio',
+        massa_atomica: '127,60',
+        ponto_de_fusao: '271°C',
+        ponto_de_ebulicao: '987°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.GEE96kCrl0i4pyUoj2QAVAHaEP%26pid%3DApi&f=1',
+        serie_quimica: 'Não-Metais',
+        eletronegatividade: '2,1',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Iodo
+    Massa Atômica: 126,9
+    Ponto de Fusão: 114
+    Ponto de Ebulição: 182
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tfUSBkw9HkFi_hiIIg5pQgHaEa%26pid%3DApi&f=1
+    Serie Química: Não-Metais
+    Eletronegatividade: 2,6
+    */
     element_53: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Iodo',
+        massa_atomica: '126,9',
+        ponto_de_fusao: '114°C',
+        ponto_de_ebulicao: '182°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tfUSBkw9HkFi_hiIIg5pQgHaEa%26pid%3DApi&f=1',
+        serie_quimica: 'Não-Metais',
+        eletronegatividade: '2,6',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Xênonio
+    Massa Atômica: 131,29
+    Ponto de Fusão: -112
+    Ponto de Ebulição: -107
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.qvYFhxgn_yssSlFRYK7OXQHaHa%26pid%3DApi&f=1
+    Serie Química: Gases Nobres
+    Eletronegatividade: --
+    */
     element_54: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Xênonio',
+        massa_atomica: '-112',
+        ponto_de_fusao: '-107°C',
+        ponto_de_ebulicao: '-107°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.qvYFhxgn_yssSlFRYK7OXQHaHa%26pid%3DApi&f=1',
+        serie_quimica: 'Gases Nobres',
+        eletronegatividade: '--',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Césio
+    Massa Atômica: 132,91
+    Ponto de Fusão: 28
+    Ponto de Ebulição: 705
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.L70-r2HgV72z7Aau88lXFQHaFk%26pid%3DApi&f=1
+    Serie Química: Metais Alcalinos
+    Eletronegatividade: 0,7
+    */
     element_55: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Césio',
+        massa_atomica: '132,91',
+        ponto_de_fusao: '28°C',
+        ponto_de_ebulicao: '705°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.L70-r2HgV72z7Aau88lXFQHaFk%26pid%3DApi&f=1',
+        serie_quimica: 'Metais Alcalinos',
+        eletronegatividade: '0,7',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Bário
+    Massa Atômica: 137,33
+    Ponto de Fusão: 729
+    Ponto de Ebulição: 1500
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.C4LPtClUNKoyjII4NL5_rgHaES%26pid%3DApi&f=1
+    Serie Química: Alcalino Terrosos
+    Eletronegatividade: 0,9
+    */
     element_56: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Bário',
+        massa_atomica: '137,33',
+        ponto_de_fusao: '729°C',
+        ponto_de_ebulicao: '1500°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.C4LPtClUNKoyjII4NL5_rgHaES%26pid%3DApi&f=1',
+        serie_quimica: 'Alcalino Terrosos',
+        eletronegatividade: '0,9',
         amostra_texto: ''
     },
+    /*
+    Nome do Elemento: Lantânio
+    Massa Atômica: 138,91
+    Ponto de Fusão: 920
+    Ponto de Ebulição: 3450
+    Imagem: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.494zGyak4loItJ1WyPWLAAAAAA%26pid%3DApi&f=1
+    Serie Química: Metais de Transição Interna
+    Eletronegatividade: 1,1
+    */
     element_57: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Lantânio',
+        massa_atomica: '138,91',
+        ponto_de_fusao: '920°C',
+        ponto_de_ebulicao: '3460°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.494zGyak4loItJ1WyPWLAAAAAA%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição Interna',
+        eletronegatividade: '1,1',
         amostra_texto: ''
     },
+
     element_58: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_59: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_60: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_61: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_62: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_63: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_64: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_65: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_66: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_67: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_68: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_69: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_70: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_71: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_72: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
-        serie_quimica: '',
+        serie_quimica: 'Metais de Transição',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_73: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
-        serie_quimica: '',
+        serie_quimica: 'Metais de Transição',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_74: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
-        serie_quimica: '',
+        serie_quimica: 'Metais de Transição',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_75: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
-        serie_quimica: '',
+        serie_quimica: 'Metais de Transição',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_76: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
-        serie_quimica: '',
+        serie_quimica: 'Metais de Transição',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_77: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
-        serie_quimica: '',
+        serie_quimica: 'Metais de Transição',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_78: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
-        serie_quimica: '',
+        serie_quimica: 'Metais de Transição',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_79: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
-        serie_quimica: '',
+        serie_quimica: 'Metais de Transição',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_80: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
-        serie_quimica: '',
+        serie_quimica: 'Metais de Transição',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_81: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_82: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_83: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
     element_84: {
         nome: '',
         massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        ponto_de_fusao: '°C',
+        ponto_de_ebulicao: '°C',
         de: '',
-        aparencia: '',
+
         img_atom: '',
         serie_quimica: '',
         eletronegatividade: '',
-        ano_descoberta: '',
         amostra_texto: ''
     },
+
     element_85: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Astato',
+        massa_atomica: '210',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.7UmMFcbUURBmatTqXFjAjgHaHa%26pid%3DApi&f=1',
+        serie_quimica: 'Não-Metais',
         amostra_texto: ''
     },
+
     element_86: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Radônio',
+        massa_atomica: '222',
+        ponto_de_fusao: '-71°C',
+        ponto_de_ebulicao: '-62°C',
         de: '',
-        aparencia: '',
         img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        serie_quimica: 'Gases Nobres'
     },
+
     element_87: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Frâncio',
+        massa_atomica: '223',
+        ponto_de_fusao: '27°C',
+        ponto_de_ebulicao: '680°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP._6rqBCui8GySyl7Gm3q3YAHaF-%26pid%3DApi&f=1',
+        serie_quimica: 'Metais Alcalinos'
     },
+
     element_88: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Rádio',
+        massa_atomica: '226',
+        ponto_de_fusao: '700°C',
+        ponto_de_ebulicao: '1150°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.dnq6y_aLPdWz1llH1qGNWAAAAA%26pid%3DApi&f=1',
+        serie_quimica: 'Alcalinos Terrosos'
     },
+
     element_89: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Actínio',
+        massa_atomica: '227',
+        ponto_de_fusao: '1050°C',
+        ponto_de_ebulicao: '3300°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.dnuIDR-q2jO5WvaCdMBXagHaGA%26pid%3DApi&f=1',
+        serie_quimica: 'Actinóides'
     },
-    element_90: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
-        de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
+
+
     element_91: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Protactínio',
+        massa_atomica: '231,04',
+        ponto_de_fusao: '1600°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.QCe5jmhPYjbN9eTkbacROQHaGe%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição Interna'
     },
+
     element_92: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Urânio',
+        massa_atomica: '238,03',
+        ponto_de_fusao: '1132°C',
+        ponto_de_ebulicao: '3818°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.qNgkYECLL7cvZr0rTAXr_wHaFY%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição Interna'
     },
+
     element_93: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Netúnio',
+        massa_atomica: '237',
+        ponto_de_fusao: '640°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.CSfu_l7N3pAddVNCKeTRDwAAAA%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição Interna'
     },
+
     element_94: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Plutônio',
+        massa_atomica: '244',
+        ponto_de_fusao: '640°C',
+        ponto_de_ebulicao: '3327°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Mo1T3yVzOf_7WghYm7V64AAAAA%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição Interna'
     },
+
     element_95: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Amerício',
+        massa_atomica: '243',
+        ponto_de_fusao: '994°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.wkHFY1jT011VtHkoHDOXBAAAAA%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição Interna'
     },
+
     element_96: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Cúrio',
+        massa_atomica: '247',
+        ponto_de_fusao: '1067°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.m0PkcovE-qnTdfSarTXuCgHaKC%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição Interna'
     },
+
     element_97: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Berquélio',
+        massa_atomica: '247',
+        ponto_de_fusao: '986°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.WAavNZJ_IeRbpcro_4MdFAHaEK%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição Interna',
+        amostra_texto: 'Batizado em homenagem a cidade em que foi primeiro sintetizado, este elemento, em seu isótopo mais estável tem meia vida de 1380 anos, e os mais curtos de menos de 5 horas.'
     },
+
     element_98: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Califórnio',
+        massa_atomica: '251',
+        ponto_de_fusao: '900°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.ucTKros9km9y-OpnOUsHQAAAAA%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição Interna',
+        eletronegatividade: '1,3',
+        amostra_texto: 'O Califórnio é um metal branco prateado. Maleável, pode ser fácilmente cortado com uma lâmina de barbear. Como emissor de neutróns, ele pode ser usado para identificar rachaduras e corrosões em aeronaves.'
     },
+
     element_99: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Einstenio',
+        massa_atomica: '252',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.4TBLh24wWiNyUS9nHfkXjAHaJ4%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição Interna',
+        eletronegatividade: '1,3',
+        amostra_texto: 'O Einstênio é um metal sólido de aspecto prateado, altamente radioativo, cada grama de <sup>253</sup>Es produz 1000W de energia, liberando intensa luz visível.'
     },
+
     element_100: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Férmio',
+        massa_atomica: '257',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flive.staticflickr.com%2F7167%2F6414981679_b4de2f4422_n.jpg&f=1&nofb=',
+        serie_quimica: 'Metais de Transição Interna',
+        eletronegatividade: '1,3',
+        amostra_texto: 'O férmio foi encontrado pela primeira vez, não em um experimento no intuito de criar um novo elemento, e sim na análise de resíduos da detonação da primeira bomba de hidrogênio.'
     },
+
     element_101: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Mendelévio',
+        massa_atomica: '258',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.GClOPkblnymJ9jT86aW56wHaKM%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição Interna',
+        eletronegatividade: '1,3',
+        amostra_texto: 'O mendelévio foi sintetizado pela primeira vez por uma equipe de cientistas norte-americana em 1955. Atualmente, não se conhece uso para o Mendelévio. '
     },
+
     element_102: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Nobélio',
+        massa_atomica: '259',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.GZA6NhpgPo0nlOQI9v2vOQHaJW%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição Interna',
+        eletronegatividade: '1,3',
+        amostra_texto: 'O nobélio foi sintetizado pela primeira vez por Albert Ghiorso, Glenn T. Seaborg, John R. Walton e Torbørn Sikkeland em abril de 1958. A equipe usou um novo acelerador linear de íons pesados bombardeando um alvo de cúrio com íons Carbono-12'
     },
+
     element_103: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Laurêncio',
+        massa_atomica: '262',
+        ponto_de_fusao: '1627°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.nrGrLA6lWlG4BthiOqgDKwHaHa%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição Interna',
+        eletronegatividade: '1,2',
+        amostra_texto: 'Este elemento foi sintetizado a partir do Califórnio com íons de Boro em 1961, no laboratório Berkeley, Califórnia, Estados Unidos, por uma equipe liderada por Albert Ghiorso'
     },
+
     element_104: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Rutherfódio',
+        massa_atomica: '263',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.XyPj-iid1EoMtfp1ku9tmQAAAA%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '--',
+        amostra_texto: 'O rutherfórdio (nome dado em homenagem ao físico e químico neozelandês Ernest Rutherford) foi documentado como sendo o primeiro elemento sintético produzido pelo "Instituto de Pesquisa Nuclear de Dubna", (U.R.S.S.), em 1964.'
     },
+
     element_105: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Dúbnio',
+        massa_atomica: '262',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.yS-i-y0AoORwO3_VI-MPOwHaH9%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '--',
+        amostra_texto: 'O Dúbnio (em homenagem a Dubna, Rússia) foi sintetizado pela primeira vez por uma equipe de pesquisadores soviéticos, mas americanos de Berkeley fizeram o mesmo. Logo se iniciou uma disputa pela nomenclatura do elemento, na qual os soviéticos sairam vitoriosos.'
     },
+
     element_106: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Seabórgio',
+        massa_atomica: '266',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.0cqg2WkRweL9Ef2qWBinbAHaGE%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '--',
+        amostra_texto: 'Americanos e Soviéticos descobriram este elemento simultaneamente, e quando o atual nome foi sugerido, criou-se uma polêmica pois o homenageado ainda era vivo, mas como o mesmo já havia acontecido no caso do Einstênio, a IUPAC aceitou esta nomenclatura.'
     },
+
     element_107: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Bóhrio',
+        massa_atomica: '272',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.yTUj4PRegbsaymJC0vSoXAAAAA%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '--',
+        amostra_texto: 'Espera-se que o bóhrio seja um sólido em condições normais e assume uma estrutura cristalina hexagonal compacta ( c/a = 1,62), semelhante ao seu mais leve congênere, rênio. O bóhrio deve ser um metal muito denso, com uma densidade de cerca de 37,1 g/cm3 , o qual seria o terceiro mais elevado de qualquer um dos 118 elementos conhecidos'
     },
+
     element_108: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Hássio ',
+        massa_atomica: '277',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.85dPzLn_EEcDKmouNSiGOwHaE8%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '--',
+        amostra_texto: 'Da mesma forma que os elementos 101 a 109, criou-se uma controvérsia em relação a adoção de um nome para este elemento. A IUPAC adotou temporariamente o nome unilóctio (símbolo Uno). Em 1994 o comitê da mesma organização recomentou que o elemento fosse nomeado de hahnium, e em 1997 foi adotado internacionalmente o nome Hassium, aportuguesado para hássio'
     },
+
     element_109: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Meitnério',
+        massa_atomica: '276',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xe9jpfErEfYT_FSc8ggC0AHaFj%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '--',
+        amostra_texto: 'A previsão das prováveis ​​propriedades químicas do meitnério não têm recebido muita atenção recentemente. O Mt é esperado ser um metal nobre, pouco reativo, como os demais metais do grupo da platina.'
     },
+
     element_110: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Darmstadtio',
+        massa_atomica: '281',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.ga3kGs1AVAk9In1JpTmbhQHaMF%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '--',
+        amostra_texto: 'Batizado em homenagem a cidade no qual este elemento foi descoberto, '
     },
+
     element_111: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Roentgênio',
+        massa_atomica: '280',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.8ZC7oJMTaUwMleWbIuhuWgHaFY%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '--',
+        amostra_texto: 'Ainda não foram sintetizados compostos com este elemento, pois a vida útil dele é extremamente curta. O nome Roentgênio é em homenagem ao físico Wilhelm Röntgen, o descobridor dos raios-x.'
     },
+
     element_112: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Copernício',
+        massa_atomica: '285',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.P4J468bc9z7wbjAvWO6rdwHaHz%26pid%3DApi&f=1',
+        serie_quimica: 'Metais de Transição',
+        eletronegatividade: '--',
+        amostra_texto: 'O Copernício é o último membro da série 6d de metais de transição, Sua configuração de camada fechada do copernício faz com que ele seja um metal muito nobre.'
     },
+
     element_113: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Nihônio',
+        massa_atomica: '286',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.1b0G8iaKt5BLZv0T8DJ07AEsCd%26pid%3DApi&f=1',
+        serie_quimica: 'Metais Representativos',
+        eletronegatividade: '--',
+        amostra_texto: 'O nipônio é o primeiro átomo a ter elétron em 7p, e é o mais pesado da família 3A. O Nh deve retratar propriedades químicas similares ás do tálio'
     },
+
     element_114: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Fleróvio',
+        massa_atomica: '289',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Q1OsAvoCUEw9tgBQArBUugAAAA%26pid%3DApi&f=1',
+        serie_quimica: 'Metais Representativos',
+        eletronegatividade: '--',
+        amostra_texto: 'O flérovio pode ser obtido em aceleradores de partículas, e tem uma sobre vida maior que 1 minuto, considerada alta em comparação aos seus vizinhos.'
     },
+
     element_115: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Moscóvio',
+        massa_atomica: '288',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.ob7JJ_cGdnrZRvsDUcClkQAAAA%26pid%3DApi&f=1',
+        serie_quimica: 'Metais Representativos',
+        eletronegatividade: '--',
+        amostra_texto: 'A equipe responsável pela descoberta deste elemento relatou que chegaram a produzir 30 átomos em 3 semanas, colidindo átomos de cálcio e de amerício',
     },
+
     element_116: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Livermório',
+        massa_atomica: '292',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.quecuriosidades.com%2Fwp-content%2Fuploads%2F2019%2F01%2Flivermorio-300x234.jpg&f=1&nofb=1',
+        serie_quimica: 'Metais Representativos',
+        eletronegatividade: '--',
+        amostra_texto: 'A história da descoberta do elemento 116 envolveu diversas polêmicas envolvendo dados experimentais distorcidos em 2002, mas em 2006 foi confirmada sua existência.',
     },
+
     element_117: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Tennesso',
+        massa_atomica: '294',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
+        img_atom: 'data:image/png;base64,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',
+        serie_quimica: 'Metais Representativos',
+        eletronegatividade: '--',
+        amostra_texto: 'Os átomos deste elemento são superpesados, e após 150 dias bombardeando berquélio radioativo com íons de cálcio, foram produzidos apenas seis átomos deste elemento.'
     },
+
     element_118: {
-        nome: '',
-        massa_atomica: '',
-        ponto_de_fusao: '',
-        ponto_de_ebulicao: '',
+        nome: 'Oganessônio',
+        massa_atomica: '293',
+        ponto_de_fusao: '--°C',
+        ponto_de_ebulicao: '--°C',
         de: '',
-        aparencia: '',
-        img_atom: '',
-        serie_quimica: '',
-        eletronegatividade: '',
-        ano_descoberta: '',
-        amostra_texto: ''
-    },
-
-
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.NcfalKmXdoR_8_i171ss8QHaHa%26pid%3DApi&f=1',
+        serie_quimica: 'Gases Nobres',
+        eletronegatividade: '--',
+        amostra_texto: 'O oganessônio tem o maior número atômico e maior massa atômica de todos os elementos conhecidos. O átomo de oganessônio é muito instável e radioativo, e desde 2005, apenas quatro átomos do isótopo <sup>294</sup>Og foram detectados.'
+    }
 }
 
 
 var ClearTable = function() { //Limpando as informações
-    aparencia.innerHTML = "";
-    massa_atomica.innerHTML = "";
-    ponto_de_fusao.innerHTML = "";
-    ponto_de_ebulicao.innerHTML = "";
-    serie_quimica.innerHTML = "";
-    distr.innerHTML = "";
-    nome_do_elemento.innerHTML = "";
-    amostra_texto.innerHTML = "";
-    eletronegatividade.innerHTML = "";
-    ano_descoberta.innerHTML = "";
-    document.getElementById('imagem-informacoes').innerHTML = "";
-}
-
+        massa_atomica.innerHTML = "";
+        ponto_de_fusao.innerHTML = "";
+        ponto_de_ebulicao.innerHTML = "";
+        serie_quimica.innerHTML = "";
+        distr.innerHTML = "";
+        nome_do_elemento.innerHTML = "";
+        amostra_texto.innerHTML = "";
+        eletronegatividade.innerHTML = "";
+        document.getElementById('imagem-informacoes').innerHTML = "";
+    }
+    /*
+     */
 var FazerTudo = function(element) { // Colocando as informações nas laterais
     detalhes.classList.remove("n-display");
     ClearTable()
@@ -2087,8 +2152,6 @@ var FazerTudo = function(element) { // Colocando as informações nas laterais
     eletronegatividade.insertAdjacentText("afterbegin", element.eletronegatividade);
     ponto_de_fusao.insertAdjacentText("afterbegin", element.ponto_de_fusao);
     ponto_de_ebulicao.insertAdjacentText("afterbegin", element.ponto_de_ebulicao);
-    aparencia.insertAdjacentText("afterbegin", element.aparencia);
-    ano_descoberta.insertAdjacentText("afterbegin", element.ano_descoberta);
 
 
     var img = document.createElement("IMG");
