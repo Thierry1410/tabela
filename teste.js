@@ -1122,7 +1122,7 @@ let obj = {
         ponto_de_fusao: '1755°C',
         ponto_de_ebulicao: '4500°C',
         de: '7s<sup>2</sup>6d<sup>2</sup>',
-        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.dnuIDR-q2jO5WvaCdMBXagHaGA%26pid%3DApi&f=1',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.mQ-qofex1QTTcQrnk_89fgHaG8%26pid%3DApi&f=1',
         serie_quimica: 'Actinóides',
         eletronegatividade: '1,3',
         amostra_texto: '<p>É sólido de coloração branco-prateada brilhante, ou acinzentada quando exposto ao ar, também é um condutor intermediário tanto de calor quanto de eletricidade. É pouco radioativo, mas mesmo assim oferece riscos ao organismo humano. Empregado em ligas metálicas, na produção de utensílios fotoelétricos e termoelétricos e como catalisador.  </p>'

@@ -572,7 +572,7 @@ table {
 }
 
 .meusAspectos {
-    background-color: #E571AF;
+    background-color: pink;
 }
 
 #abaNomeFoto {
@@ -604,6 +604,7 @@ h2 {
 
 .section {
     margin-top: 300px;
+    justify-content: center;
 }
 
 .CategoriaPic {
@@ -617,18 +618,26 @@ h2 {
     margin-bottom: 30px;
 }
 
+.CategoriaSubtitle {
+    margin-bottom: 15px;
+    font-size: 35px;
+    align-self: center;
+    justify-content: center;
+}
+
 .CategoriaText {
     text-align: start;
     font-size: 20px;
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
+    justify-content: center;
 }
 
 body {
     overflow-x: hidden;
     /* Hide scrollbars */
-    background-color: #E571AF;
+    background-color: pink;
 }
 
 ::-webkit-scrollbar {

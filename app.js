@@ -564,7 +564,7 @@ let obj = {
         ponto_de_ebulicao: "2754 K (2480,85°C)", //Temperatura em Kelvin e dps em Celsius
         de: "1s<sup>2</sup>2s<sup>2</sup>", //<sup>número</sup> para colocar o numero superescrito
         aparencia: "Sólido, Cinza Metálico", // aparência na CNTP
-        img_atom: "/Imgs/Tabela/Berílio.png",
+        img_atom: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.wsOr6_cxW1zkal5IKbMTWQHaEd%26pid%3DApi&f=1",
         serie_quimica: 'Alcalino Terrosos',
         eletronegatividade: '1,5',
         amostra_texto: "<p>Entre os metais leves o Berílio apresenta um dos pontos de fusão mais altos. Este elemento é um bom condutor de energia, não é magnético e é resistente ao ácido nítrico.''</p>"
@@ -577,7 +577,7 @@ let obj = {
         ponto_de_ebulicao: "4273 K (3999,85°C)",
         de: "1s<sup>2</sup>2s<sup>2</sup>2p<sup>1</sup>",
         aparencia: "Sólido, Marrom/Preto",
-        img_atom: "/Imgs/Tabela/Boro.png",
+        img_atom: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9Bu45Bc3eTIyJvWoeOEczgHaGN%26pid%3DApi&f=1",
         serie_quimica: 'Não-Metais',
         eletronegatividade: '2,0',
         ano_descoberta: '1808',
@@ -831,12 +831,12 @@ let obj = {
 
     element_25: {
         nome: "manganês",
-        massa_atômica: "54,94",
+        massa_atomica: "54,94",
         ponto_de_fusao: "1244 °C",
-        ponto_de_ebuliçao: "2067 °C",
+        ponto_de_ebulicao: "2067 °C",
         de: "4s² 3d⁵",
-        img_atom: "http://pt.nextews.com/8c6d3108/",
-        série_química: "metais de transição",
+        img_atom: "http://nextews.com/images/ea/d3/ead3fa1370e30eb0.jpg",
+        serie_quimica: "metais de transição",
         eletronegatividade: "1,5",
         amostra_texto: '<p> O manganês é um metal que pode ser distribuído em diversos ambientes geológicos, o mesmo se situa no grupo 7B e é o 12º elemento mais abundante da crosta terrestre e seus principais minérios são a pirolusita e a rodocrosita, encontramos-o na forma de óxidos, hidróxidos, silicato e carbonatos. O elemento é de extrema importância pois atua como agente dessulurante (diminuidor da quantidade de enxofre) na indústria. </p>'
     },
@@ -844,97 +844,97 @@ let obj = {
 
     element_26: {
         nome: "ferro",
-        massa_atômica: "55,85",
-        ponto_de_fusão: "1536°C",
-        ponto_de_ebulição: "3000°C",
+        massa_atomica: "55,85",
+        ponto_de_fusao: "1536°C",
+        ponto_de_ebulicao: "3000°C",
         de: "4s² 3d⁶",
-        img_atom: "https://pt.wikipedia.org/wiki/Ferro#/media/Ficheiro:Iron_electrolytic_and_1cm3_cube.jpg",
-        série_química: "metais de transição",
+        img_atom: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.3P41mEpNv33VEt9UNg5ZnwHaFj%26pid%3DApi&f=1",
+        serie_quimica: "metais de transição",
         eletronegatividade: "1,8",
-        amostra_texto: "<p> O ferro que está localizado no grupo 8B da tabela periódica e na natureza não está em estado livre ou elementar, porém, é comumente encontrado na forma de pirita FeS, hematita Fe2O3 e Fe3O4.  O ferro apresenta 3 formas alotrópicas, alfa, gama e delta, sendo a mais estável em temperaturas normais o ferro alfa. O mesmo apresenta estado de oxidação + 2 e é facilmente oxidado a ferro +3, o ferro também é um agente redutor forte que forma complexos quelatos ou por associação de íons que são facilmente identificadas por formar soluções coloridas. Além disso tudo, é importante destacar que o ferro é um dos elementos mais importantes da história, assim como um dos mais abundantes do universo, inclusive o núcleo da terra é formado principalmente de ferro e níquel (NiFe). </p>"
+        amostra_texto: "<p> O ferro na natureza não se encontra em estado livre ou elementar, porém, é comumente encontrado na forma de pirita FeS, hematita Fe<sub>2</sub>O<sub>3</sub> e Fe<sub>3</sub>O<sub>4</sub>. O mesmo é facilmente oxidado. Além disso tudo, é importante destacar que o ferro é um dos elementos mais importantes da história, assim como um dos mais abundantes do universo, inclusive o núcleo da terra é formado principalmente de ferro e níquel (NiFe). </p>"
     },
 
     element_27: {
         nome: 'cobalto',
-        massa_atômica: '58,93',
-        ponto_de_fusão: '1495 °C',
-        ponto_de_ebulição: '2877 °C',
+        massa_atomica: '58,93',
+        ponto_de_fusao: '1495 °C',
+        ponto_de_ebulicao: '2877 °C',
         de: '4s² 3d⁷',
-        img_atom: 'https://escola.britannica.com.br/artigo/cobalto/481004/recursos/169165',
-        série_química: 'metais de transição',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.jgtb4lggpiemhvupw_-NpAHaEj%26pid%3DApi&f=1',
+        serie_quimica: 'metais de transição',
         eletronegatividade: '1,8',
         amostra_texto: '<p> O cobalto na natureza apresenta dureza acentuada e por vezes é quebradiço. As suas propriedades físicas são variáveis em decorrência da mistura alotrópica na qual este se apresenta. O cobalto natural contém um único isótopo estável, o Co-59, mas fora isso existem mais 22 radioisótopos, sendo um deles o 60Co que é usado em radiografia e em radioterapia por ser uma potente fonte de raios gama. </p> '
     },
 
     element_28: {
         nome: 'níquel',
-        massa_atômica: '58, 69',
-        ponto_de_fusão: '1455 °C',
-        ponto_de_ebulição: '2887°C',
+        massa_atomica: '58, 69',
+        ponto_de_fusao: '1455 °C',
+        ponto_de_ebulicao: '2887°C',
         de: '4s² 3d⁸',
-        img_atom: 'https://www.manualdaquimica.com/quimica-geral/niquel-ni.htm',
-        série_química: 'metais de transição',
+        img_atom: 'data:image/jpeg;base64,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',
+        serie_quimica: 'metais de transição',
         eletronegatividade: '1,9',
         amostra_texto: '<p> O elemento níquel, em que o nome deriva da palavra alemã "kupfernickel", em uma referência à nicolita (mineral raro, encontrado em veios hidrotermais, de fórmula química "NiAs"), é um material de grande resistência mecânica à corrosão e à oxidação, possuindo ainda um sistema de oxidação isométrico. Na natureza encontramos 5 isótopos estáveis do mesmo: Ni-58, Ni-60, Ni-61, Ni-62 e Ni-64. </p> '
     },
 
     element_29: {
         nome: 'cobre',
-        massa_atômica: '63,55',
-        ponto_de_fusão: '1083°C',
-        ponto_de_ebulição: '2582°C',
+        massa_atomica: '63,55',
+        ponto_de_fusao: '1083°C',
+        ponto_de_ebulicao: '2582°C',
         de: '4s¹ 3d¹⁰',
-        img_atom: 'https://pt.wikipedia.org/wiki/Cobre#/media/Ficheiro:NatCopper.jpg',
-        serie_química: 'metais de transição',
+        img_atom: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGBxIRERYREREREBMREA4RERERDxAWERMPFhIXFxYSFBQaHi0iGRw0KRQUMEEwNCs6PT09GSJDSEM7Rzc8My4BCwsLDw4PHRERHTAoIigwMDAwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMC4wMP/AABEIAL0AyAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAwQFBgcBAgj/xAA7EAACAQMCBAQEBQEIAgMBAAABAgMAERIEIQUTMUEGIlFxMmGBkQcUI0Kh8BUzUmKxwdHhU/EXNJIW/8QAGQEAAgMBAAAAAAAAAAAAAAAAAAECAwQF/8QAKBEAAwACAgICAQMFAQAAAAAAAAECAxEhMQQSIkETUWGhMkJxgZEU/9oADAMBAAIRAxEAPwDZqKKKACiiigAooooAKKKKACiiigAooooAKKKZ67iUMABmmihDGymWVEDHuAWIuaTegHlFJxyBgGUhgQCCCCCD0II60pTA5RRVa8S+JGhbk6ZY5J8c35sgWKGO4AaSxyJNwAAPmbd41SlbY5l09IstFQfhfjrapZEljWKaCQRyorlkZSoZJYyQCUYE227H3qcpppraBpp6Z2iiimIKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDzWP+PeJc3irpqA/I0ypHHGgszO6xtkT1AObb9PIPpsNUL8T9JEeU2CxzNmfzBjbeJAC0JkA3YgmwP+E/WnOviX+Pr8iTGvg7jB03JhAVYpppI/y+DF4WLeVhIDgAbi6/O49Kv8Gqje+Do9uuLqbH52O1ZHxjS6deVIgSSGTFJTEsl0bc8soSXFxfe3b5WL3jHFRDFI+nQwyR8tYSgYMy9HLAdhYd+9ZozueGbMvizfyl/wWzx3xXVwpGNIEGcxSWRinkPLLInm2BY2FyPT1FUqUySEtKiRzuGlkm50kTKCyEXfynHyWtbtt0FRi8Q1OqikileR+jjMF7yEEIwBBJG571L6nTanUS4yHlpHAkh5mZZURwXVgRdjfbp61HLkdsngwrH3obcOQaSRdSr6hZWVEiN3YSXku4kjcklbZEi+wIPWtC4L4vgniV2JjLZ3BVit0Nrh7WIOxHuPaqjrtVFp9p5pJyqrKqKUZFAJFi1iSSCfL6D60xg4hFFN+vFIscwVowZQwGVrBWXdgB2HS4qMZLjollwxk5a/4TviTxXPKxh0jPAVVn/urzOF3JUkFVGx26+1K8A/EK7wwapP1JZI4VnjI5bu7YpkhsUYm2wv69Olf0fFWZWUyPGxVGzsscko+GOxsQDa3vc0wTjbRzDlfpBP7l0TLGUXD3LAhjuR7U4z17bZC/En10jbKKzjgX4iOu2rQlMyrSqFySwBvigs/VSQNxfvWhQzK6h1IZWAZWU3UqRcEEdRW6Mk30c68dQ9ULUUUVYVhRRRQAUUUUAFFFFAHKKKrXinxemjYRpDJqZyFPKj2xUkhS7kbE2Nh3qNUpW2NJ09Isldqr6DxvCW5epVtE5XICd0CEd7Nfb6gdDVlWQHoQbgEWI6HvRNzXKHUVL0xSiuV2pETzTLi/DI9TE0Mq5I43FyDsbggjcHYU+rlDWxptPaMt4/wtNHqBErMiSoJGaYsyyCNgwYYWYurY7f5h61FcQ1k4kdGG0mTAQrbG62IYAHEC42vvc/S9fiXpYn0ytLEJcJBib2dAUa5Q3G/lH9CqB4d5wdMGZjLzIh5xgsl7lnv8TAH2FxXNzQprSOx41use32JeF9UmmEsM8I1ceJkkMN+YjK64FiSABdxsCdx37T+hm0suX5gMWYRgF5OgA2ksTck97bbDamPFOCqiLp5TLijNJGYlhK8xzlJK+YzxHkUW3/ANaiOJgpGQUZiCpDIVJKAkqwci5G/wAum9QfJbKXLG+t/UhEiNCGjaWCRJDcIiALkoI6WK9/3faT4ewmjY8soWiCA/lZHBUAnCHLsFH+lN+CcSjPMjKPzmS8yviFzABDoQAQdvX0p1xLjE7rCVkMgWOYTI7Rxy5LYOUJAN7Mw+o9qGvoe/sZcIl84RGV2uqqcF8wIJYMepO4373pOPjDz6kaaKJpFWQ5Ko/aBZpRsABt3P2vUeAgYp5YyjIt0ZziAuIIYgi2w+9Svh3jksYaJRuBy7+7DqCN7At370mkuRzTrgS1cZWMBm5gDyzqAGQ3a43sL9FU9bbD3q6fhL4h/TXQyhshzGhbHYjd3VrdPiv9SO29Z1mkBQy2zSMEvcszEAkkhVAuf42qV/CmQzcQeRYv0Y9LJi/nYRzPJGMMyALlQ32P1n41N1wU+djmY2zWqKKK6ZxQoorlAFa8beJjoo0CIHlmMgjDBsFVACztbcjddu96pf8A8szIRGEi1JJjHMVJY1BN7oy3a56DK9vlUL428U/ntTNymDxadjDBbIRi9gZQw2ZiUNvkKi9OryObzWblqLBUSJ1K2KknfmeWxPzFZKyV7NmzHhTnrk2/gnHotVE0i3jMbOk0clg8Mi9Vextbve9rEUp//RaS4H5mDzbi8yDa1/XasV4PxWSJXjaRsSkSzgAsrFLiGK/cAG3XewvT3XcSTTIX/Tmaa8cebKcIwqnmYgWH7rb73PsR+Q960WLwly9mx8N4nBqE5kE0U6BihaJ1cBgASpIOx3G3zFZL444jJFxJtdpGMqszQSpy3yjlgxSRShFyvkBDD/N9YJ/E0sank6mWIBE2hkxBJtbYGwNgB02vTrw/x0vJ+qFMmK4maRMeXhexdhYdR270Xk9p5RLF4rm97E9HxRdVivNigdUeWSVI2MjuRiEYdWO/QfWrNwKSAlYyeUwhXBnvsFspCsLWbYd+9VOLi0IkEgijinXVrK5Un+62OKr0IBB733qxeIOKKC0oaJleNlzCuh2lV0tcWkAF9wOh++ajWp3wWyXjmq04UhHlDOIuWzCwkZgAxkPmXqPUbirBwTjkeoUC6rKBZ47nZxcNgSPMux3FZdwbxFJLEDPCzLHMGieMtGXcXsH33Iufe4q7Pp2dFeP4ZFG6OoAsjFHAPztc3vepxluP3Mubx5f7Fyoqs8F8QuFx1a8kqinmPYKxCjK56A9ftUvBxaBwCk0TZ2xtIm9wSABfrsftW2Mk0towXiqXpkD+JEsS6dS8mLrKjRxBlylyIjZQhIyFpD7WqkLPHFBIFjhma7AMnM08yYsxA5T7ki+9j2A+Z5+JEDnWTTIy6hJkiCmN43MKIgDRFT0uQx6/uNRXBZMNA2qlmYlZQkcHkzMa2XmKGBv1O/y+lY83yptHT8aVGNJvsX4vxPUiOPVyKZVdmgGpbARBrmyqAQwIs25Fuo7Uy4lqNQVawGKLZngbmRCGQgDK1woJItex61oP4acFdtLIdREh0urMc8ELkODGwyyaMgqtxyz1636VYeJabQaXTNFJFDDp5Dg0aQgB3I6BEFy3l9O3yqawLXs+Cv8A9frTlLZjPCdV0dIlZ1XFxmC8ig3fAEGx6fb6hY8Rje3leWzlspmNwDY4kG+BA26dvpUVE7wTusTuVWZ1sSMWxJFmHS+w79qkeLaCR445Y0jUnqEXzbrckyZ4nft12NUNcmzudnIIlEodRkRaciUqVuDcqSdyLlevXel9MVFz5S7MQMbKpvtZT071XpDJIzRq37gCuyguGvdvXrV18F8NM+oiickBSZH/AMRKgki4Fr7D7ihxvSITajdfQ94VwLWaxQ0SiJEZUzkk3JXYg2B2sT27/KtF8O8DTRxctCWJYvIx/fKQAWAvZRsNvkPcyOnhWNQiAKqgAAdAKUrbiwTj67OZn8m8r56PVFFFXmY5UNxXxRpNM/LmnRHtcp5mYAjYsFBt9amK+e11c3Pd5y2ck8o1AKKRbIhxbb5/aqcluVwXYcautM9eKJ/zGsd4khHNYFFWyoIiqhGLXA/Z6dSa9LreQgAs5sJfy5i50bqSTmQCLdD6fCKT1/EFSEmEEZSSuYXRGhWMMDicgTfp0PWmWnnCSuRkQ0bDFGcsAwAxBuD0I6+hrG9vlnVUzK4E4te15XCM3PiEeRCLgq4uzRxgbAWHfvUj+ROq06qyl1gIjEiY5tlcorAXJbb16AUhDw52Y8mN2VVdguRblQgFpHJsLjYb2Ha1OU4VNdjELBrckeRgUUE8kMb4bA7/ACN/Sm2voHvpEXoPCLPK6hrLHE0zBiokC2uBiTZjt/6r1pODiVnxniiY2wzfAEA2IFwQOg7ipHheieIl3/RM0D2dj3jYZKoA3Fwo+h96leBn8v8A/YgdxgyhZFIZBJk5JVh6373329KVZHslMJdFS1HhPVqpnWNnTOxdLllJ6MTtdT6+3StE/D78PYdTp4dXq531KyI55AOMatkVKswORIsdvUGovQ67USQTIvLXTNJy1IYxpCzm7AEvdF6/1tV38EyarTQw6OSCIqkd+aupFxdmYhoyt8uvTberceRN/IzeRFTO5f8AJzW/hXw5kKwLLpHI+OLUzE7dLq7EEfSqLrJNRwGYwSurxyoTHKqMW5YJBKx5WRv+RWleJfGMOjRmZHdowrSKAwVFOwdpLEWysNrm5G3cZ/424/BrOVz4QJYxHIpjuJI0ljBMbkEjvfcenzqeRw1wUeO8m+ev3PaeIINc6qGVjCheIiP9RmbYx8omzjfcXHXt3iH4i51vKfTrpkswSIXJMgO+TEWNrnbpsPqvodBBAE1cDtEZcuXKdlje5BUgL5V2PYnYdujrWaqVWU6lESR3Vjqcs2jjNlLyICQyWO3uKy7SfB0lDaHnE+HCSMLEAAWtGCAWMiAklmvYN8h8rfOlcR4vqBE0EkQGVgxZGVQoNwTYAjqv8Ve9BrjO7wxs4WKRTzQo2LlyCiEix3A79j0rz4iWFIW5haBp0SPA3eZsZCSQ1zkpsLe5+kZpJ8jrr12MvBf4mvpzHDrbHThRGGVDnEBYKRbdo7W2tf36U58d8ajnmMwlaTTxpHy2hN1sQCzdQDc3BF/2is61iY2JW1rbEgnDe63H9b1YfCOrT8q8LJkxWQuCxyIG6KqWsD0uT22rRVtxozzgicnshnpxDM8hjzyfMplhbMi93F7g/F9xUxoODSraKS6hDzNrmFpDbcmxPa+/ptTLw3oXd2yRLBwXJVRGlmBcAEi62PS/ep/U8eSIvgsbtJ+mtmspjAFgykEkbN19R71RT/Q0ytogddwMwkSRZGKUIzMQtszclkY74bG1WL8OuMw6eQmWQKghIV3BssZNyxa1+q7+9edMq6xEjMZj8gRY0ty1UEtsBsfi/k+wh+L6d1dl+FEzvE2DFQWIAJXfsfb+S5t72VZY3PqbpDIrqGUhlYBlZSCrKRcEEdRvStRPhQMNFpwxyP5eC/Ta8YIFxsbbC/yqWrpp7WziNaZ2iiimI5VX8R+AtJrX5j82GS+TPC4XJtt2UgqTt1tVorhqLlPsapzyimj8MOH4Yss0hs3maZgbkWDFVspI7bVnkfDho5Zoph5hLqIQwZlcqVISQkkk38p6d63Wsj8aRCHXz7KpkMUoeXBrhkRbqHsLXQjb0rNnlKVo1+Lkqr1TK9pNRHkiSRJp2mhlVA0hAwDIUDm4G/La1/nT/WzoCFM+4jLBFjchzcKEFiLEWHX1P0huNvHMFUtlZmkkKvlcC5BsSCo3OwPpTriESKYv1P1ZFO9/MqFQyyAIbWuR1Fx/IztJ6OjNa4JPgsECnnSXmkFliiERZYnNwXkBBudvTsfo48Qa9XKF5UhD3RzGHfmANcyAEXA6jp3FQGhRzII3flsf7z9VwrgmxKgWLH6+teeK6VYpC0bxFMikUSyNIzXAAINix6GlpBTe9i2jkGncJGObHPOJWLqwY4sCmQJsQCpI2v5m9xc9Px6bNXeJSCzQo8eAuwNxILk2Bsfbeq14F8LPxEzuJ3gOnkiWMlA6uzXdhICQSOnfufapvjWi12g0sk00UUiabF8o52ycmSwOOG6efcE9u9SvFkfKK/zYX8WHiTjCazTzadXC4yR8wfpuzYMGUMrAAgsEvY7XHsaf/ZenlUahjNEELCYnlBGkAJAQkknc9LE7GoeHjyM7yMirJPmrqGYIuZU5BbE9h3qa0yrO4U4xoGLGNGZciTZcIySUNiN7+v1HNT2Sj8df0k54DgWSKeE4zQxTJLH8XnlMTXQC3wmwubi38148T6BBqolhd2STAtGzh4jkykRqL2KdOp9PcIcJeONZi5RVU8wLd7MsZYKi7gyyXZT1AO/avMUDTy535YAMshiiBlCruCwBUne3T5e1V0+dlsLVN7JLTcNTTvJjF+nnMRKJACmqKm0axG5J2O/YWqK8XxT5I0zCQvGCllxxVmDFiLCxNh29PrZNDHHC8skivJLp2Y8yNXxeOwvmHY4vubj5Cq5zzJMWlZiZJJAzh1CWYlkUk3t0P9bUt8gl7FT48eWqKy2ZlyFmuCGAKk+h3H2FWTgvBNS0agxxDNUn55kS6qAA0bAEk9U7d+1M+N6bTc1AgksXzZMxYBmOAQkAg2vcHvb3qf0HHlj/AFVSOwjkUYBFWKTmYkSgkEgjtY3/AJq118UkitdttjnieqWKKQLG0IeGVkWwOYAwEb3HlO6+9Q+hn0s6oPNzGIWRVjDFZCLIVva63Bub7bV74vxCGeZLh3RM0KoGRBIAvLORByFlNSXDeBrvqFljgDqI3UBGj2AkCxP8JboLX2sahot9tLZ6/subSHNJMUjKkyxy5Z72CpGPjG5G/wA65r3dYXbURBDKI15y6dFDDJiHMguCSO/yH1ktGI8EZmjmWY2ljy8xUNdJEIsew9Ote/EkMOo5UGndG5k0SyxtkUWGzHJAwA/YRsfl1qKK6rnlf70VrTeKZtFOnKcYqEV4m83MQDzg9rXBsR/0dt08odFcdHVWFxvYgEXH1rF+O6SFWEckGLJuQropaNGUkKRfC4JH0NbHw3WRzRJJEwZHUFSLWt6bdD/xW3x63wc7y400x5RRRWoxhRRRQBykdRpkkFnRXHo6qw+xpaqL4r8cNHM+k0piWVAgaWe5jDsR5AoIvs3W/Xa3pC6UrknEVT1JYeI+GNJPE8JgijEoILRxojq1tmVgNmFZp4j/AA/1Ojiab85G0UWJMphZZlucQSASDsQLg3q0+A/G8up1Mmg1axmaJXdJobiKaNWANlO4PmH89Lbu/wAV3kHDnwxxMsAlLdo+YCCNxvkI/oTVdzLn2RbFXjv1Me0sUsigzSLjiTk5XNgGJDL6f9UnpeIiGyJGzhr/AKmKozvcEEva9tv5qV4Lw5NVIsfLCKYnCyNYK8mVwcQQARdV9OlPtT4ZWSNeW3MJDxQjEoXlRXIA7fsJ3A6XrI709HVU7W9lq/CnxPoRoxEZI4Zw7yahWYjKRjvLkdrWA9rD3KX4o+O4Dpn0Okk5+on/AEX5dyqobh1ztixNiLD1PSsf01nZmyMeKgIVzPnsAzH7H70vpuHvIeYCgwO7N8GK2JJUXYi1+1anelowfg3XsPtBpFdEkEQkEQKTiQOV5jHFVAByB3HyFvpUo3EI9LKvNW7yRqTsp5Zva4e1wT5dzuO96gRrpxIScAxUhJI9gFOwK2697X33+0r4mvqJ1iEkU5OAfUxwoplcKALsBc2sR1/aappbfJrjr4kpqUZolReWqkl41kexjJBO17DuRv8AKveiBCFDLIcMmdI1jK8zA8qRmuCbX+XSkeBJLMMZEaKJ7oJ2RxA7psElcGwG33/haBFClHiSRApcpEy5G5xYRuQWI3637j3FDRf7bEZeMYjOVneTEqIhkxydfOod7gDb+BVY1XHGWYGMBAu5UvmLDoAx7j5epq2cL4HJqWZ2Xl6aFX5rRxrZVIJMUQNiX2NzbYW+tEMMXKcBWaUykKTcBY+xt69fsKvxTP2Zst1/aSGv42SiOsKxYt5WxJLEKAAXIuRYjv2HvSnh7iRCzeZxK6R8nGNHUSLKrgtl0HlHb09iwjMqQmE3aJmDuANlcWCtft2+9aB4e02iggh1DjmMVKGJQAA5awcqBc9+pPWnbmZ0kLH7VXtQhwmMxacSycmUStCk2nV2MkuMpcvKpuC5uRt0AFWGeKGabDlxwxQpLIcWN3RgTgSVwVgACd+jAetuLBp2kEo5kUciONRprqP02jNmQrsCCBffsafTa+CBHEkVo1jjlRRy/OcOWf0zvkwIFj8zWfey6np8JiCQwoyK8+JinRmhDxucVBAjNibfHvvYb+9NZeJvz1aJAio6iGVWDI2kildZFjQrckqwLEnqBamvEvESMsMCGaBY8WkhbBbEyEAkpu/U3Xammr1ymR03LBJFGTsGZHQgvG1rAEC1tvh9d6XXQ1LrmyP1cqmaSeN7RuxEZBlJZSSVkUuLgEAbW7itR/Dbhk2n0eM9lzcyxoAQ0aOqnFuwN8jbteqJwvg8upDQRLl+nCxINlRMAqHI/CbBu/8AyNA8C/nBHNHrbl4dSyRtdyGiKIwKuwBceY7/ADI7WGrx18tmDyq41ss9FFFbDCFFFJSyBQWYhVUEsxIAAAuSSegoAZ8dlkTTSvECZFikMdlDHPE2IU9e23yrE34iwEkpkV9TIyCINy3RmYlpCxtYdOtx8Z+lz8WfiFFMrabR5yhwUeaM2uLXZIgRcm19/e3qKjw4xaqdJNSzxxtbFlQZSSKLXO5FxcXJHQfUYs1J1wb/ABZ9U2zx4eXWRTjU6dFle7JGzb2/NXKFyWF/hb7i9I8d4pPK8cc80usiMccqo8gVTI6XNwABcXH3+e8tpGjgLKVZAhDTTxE4yOVJLQk2A6DcfKq/xBgwDxqqxSXMUcYXFbDdWIUFj03+dVe76NTxJvnsf+BHV84Xuts5Qpdf03AAUKhIuTZunqKfcd1CrNFDBlmskgaIyJdnMJTZXAAB5h3uRuaj/DvDknBQgoqI8nMjwEgIBIS7bH4G+1OPFGsDLCzqObFiM4rYhAxQKAb3ezEnfqPoE9Oi1blaGMei02kV49RJG8llXFIywiYb3VzYM2w69Q33gI+LLG144wFmjeKVUkkVWUkXHUkDYf1tSvENP8cluX5mF8gT6gdB/p3qL1Dqq9Mv1FOPQbLa22/eroWyq6aLI0P5nlOckYjB3Md1SFFUJiBYs2/SlG4bg4sD+mzL1sRILBbEkWNyv3NeuBzDW8qDfyujkJYNHEqsQMyQuWQUfWo/HWSuIBqskdiheRgcSDezSEZW7/Sq/V703os912lvZJLrZDFyo2UjnMBCHZSbAedh8Ivk3vY09ThcSrGX1yozFnGEbHT3I8ylzZgbFe3cetJjjpRmkMcchggeCNMYzEWLAPKhAN7Yix7gH13Wbh8ZtJFrM42gQPgweVZALlAWHQddvQe4j9E3WuESPCwIZI511SRLLZXHKcpNuWETuFAQ2RvuLVG8V4hEuu55jjlEs8cn7fPFYXRgB5COn0pT8/DpdNBGsgaSHVxTrCwfmGNmIkxa2Jvv7W+lPPFs0KRqI2YvIZFcAx2VQ6BllKgFkJZPqTv2o/wRlpt776FPEOoRoi0WkhjjltKZm2LFr3OI6nEG96YweH5tFpItQX5mlnWKQgBkfTtKAV5lyRy7kDK/cbV40TpqNRFHMQqyRHZDZbgXECHsD5t/6Fy4jqVXTTKUHLXSzpylG3LERAQA9un2qeOdy/Yz+Rm/HUzJVZ9IIlQNKwRryqsEnklIdVAuAWYks1gSB5RUnHHppVZ5JsJYgilZLhCytYgu4ujNj0J79+pqPCtCxi6kF4wUUMVV3FiRkew9b/vFe9Dp355BZyJeWC7sMIzG1w7MTgxXFjv86rSRqyU+CQmaGWaQrCXL4swzBKqLAxqSASDYd+xqV0fCDrZeTE2NwRzArAIABlJsdxva1/3D3pvxLTokjMHL5urMFdgWOIJaxABXrvb9x6dan/wz17B5laPEcuF1eyWQAlTEGBueoPT1p45VUkyjPkqYbRa/B/h4aCDlGTnO0kkjy8sJkSdhiCbWAUde1TtNY9WD8qXWQGukklwjjttvbFKK5eimI7SUqBlKkXDAgg9wRYg/elK8t/xSYGKQcGRNQ8dxjppXjXJxldCVBBABI2H3ruu06xh7hyl842jBDNINyijcIPhv/Qrmj0wk1mpjd3SNp9WVkCq2LGdrGxFzuOl/+1uLKgkSKSbmdS6ojIco7MMgd8rgbEfuFcuuzt4tOUR2n4m82PNQ4iyRmFnDbm5ABJ269B2FN+NyMszI4OC2ItKXRUdRYBiSSdv+PSpjSBHc/EsqyO74EYjIEBLnr+7t3NRfH585WMBGUTAAJvuCBZgAb3OX0FJdlr45EuDzR8l8gWU+RUK773Fwex69uwrsiq6qCXxhXa6XUC1jcgWv/uatPgcMmmYkKM52It3CqBuD6HL+alptRsQbEEEFSBiQexHQir1i2t7MV+W5r10Z4nC0tnLLdVjYqGta9trjr3/n6VCwx4uJSFxYmyE3OJuCxJ6m3+tXl+AaRWZuUTkCMWlcot/8Kk2FV+fwmcvLOmAJsGjbKx6ggEC9NS0SXkS/ok+DaeGGIR8pom1CxkSgjzRXJsQbW+K179StRp1YiusRDhOcokuLXcEFiCN2+vpSutLsfM5JCcvZEAsLbgDodutJQL5lsLWZbW7H1H9dzValvlk3nWviIaFBgAxBOGShrA2AuQp73s32NPdHH+UZZEeNgEJccwmMkWstrXJ3G4Hanbwo3VLHvi5A69u479+9dm0cUqlhlH/dK8TeQriCCytuGW5Pak9rslNzTGPEeKozifkzRsisrO20bhugiK7D91J6/iiTkPGrLsFUqrdDHujEgkrse+12pXjGvR1WGynDDzhWycKpClt7Fd/T1pXw/wAAuVkZPzAQORFzrGPewCoLG+x6/KjhImnvojuNQxcm6SqWR0N0GIksLMy7kgC/8VefCuvOo0qPNZ3HNhm6WcoSpJHTcEfc1VfEbNIDEkUMSgA3PmkiVAS0INgCL3PTqai+HcXm0UhaOwBdQdPzC0Tk2Lgm98xdfa59qnioh5OF1O0iW8Q6TU6fURDFZ4iph02zutgDZXBOzgMftf2lppLX0omMvKdWlZzjGRgLQRgbMPU3v0FOuHeIRNCJpopNNHKcYHMfOVXQnmym2+yk2uttz16CK0msibVlbjTxyOkaNPKuRIJAYgXBPXv+4C+20blN6Qsdv1+X0c4jq8yCXUXjQEILCzAEBV6g9PsauPgWIHTCXq0ruCf8sZKgdPkT9RVB4ZrC+mzlUNKZNRzJMhkhyIUxqBiGuOvzFX3wVrI5NHFyyf0lMcgIsRKPMfceYH61PDOreyny63jWvss8FPoT7/7UwgNP4a2o5g5FFC0VID1Ub4h150+mmmALGOJmUAfutYE/LcfY1JUhqdOsiNG6hkdWR1PRkYEFT8tzSrrgEYV4Xkb8wgkZoTIVzcsyBwTdrkny3F+x6n3qS8UcTRZ45kjUc8BkmlV1DIVsHte7r5VP1r3+Inhx9LOHjP6PKLIWFrG+JivfzWAvv6/eK4k8M6QyRnIsdPHygVZICQc44z0RbqxAv+77c6lp8nXxNudyOdHxsNHuEBExid4FxDRBQSVjJ2O9r37V64BoZDGyRLnIxZixNlBcmzSt2AB9zaheH2SOAcqRjJZsnNkndwGKpsSAD69h9Lbp4FiQRx7KvfuzWsXY9zTiVTFmzOEv1FNFpFgiWIHLEG7WtlISS7W7bk/xXJUU10Ixr2NMxrSc597YwmhFM547Am3QGpv8kaj59IzH5dhSaHJWdRGSelN2j+n/ADVkk4eabycPPpUHJaqGUKXUHpcV6tvbY/LanQ07gWFNJNE3X/3QApbpcA26XAv9K7ptWYJD5Q0cwPMtfNWuLlT17jvXhWI6g+9eNet48gQeXJFN1A/u2BIudh0PaoXO5Lcd+tpjDisiqWKmSYpaRgzLdA3QE+1/4r3oDo0WOSJDLqy4Z0nxMRUqSBGoJHUruT2NSmq00WYl8+CxyDlhYyHidi3UEq3xEgg9tqraM6zPkVycGDmSWQ4FgEFyAENlA+pqmda4N+R22v0H2sdQ+McraieSxZ1FtPBGScsVU4gbkBQbf7xmkxikBIFkJYxkZdCQocbm29WrRwcqMCaMhI7t8G6rcEEAW33P3NQPFohz3dbhWZnAjt0fcXJ2IpK98Dca6G3D4OY2CGKJpHiSSV0fEXV/OQuwGyjp3rSPC/BvykRjyyZ3DuQWIuFCixNj29O9ZhBqFD3F7NcOP2gbb/6VsWhXNVbrkkbfKxUHb71pwrZzvLb6H+lNSumWmmj01SMUdq1owCi0V0UVIANeHNq915db0AV7xPoIdVC0E6F42sfKxDI46Op7Hf8Ak1lXi7Tz6NjFEqcgussMiwohUhSts1A32v8AU1ses0LnpVY4zwUTEpIAQO29r+tu9UZMftyXYstR0VfwvAJAJ26ks0a7WW/Vye53b7n6WmGEUjw7g4hFl6bbdqkBCT2+lKZ0iV5Hb2zx06UtGx7gGlIdGx6A09j4c3pU0mQ2MWIII3B/im/JqbHDT6Vw8NPpT9SOyCeD5Ui2nHpU+/DWpN+Fv6Cl6j9ivSwD0prJAPSrQeDtYk2BsbC+9MX4Y3+E0nIe5WpdMPSo/U6f/f7d6tknDT6GmU/DD6VBwTVlT1OpeGM2OyxlFkQWeAk3EgUbW7bfL3p3G8M2mCPDII3uXEcQeRArg89nuSwNxta+596kZeFkG42+9rehqPn4VNGyyQEoY2yCgkxm5F1ZLi429e5qisX6GzH5euKHD9eWrEA4lEjBEgAAspZ97+Xr86juIQszbAhZCqtchZIpCCAQCDe9wPqfS48zRakAm+IyZwAibFjcqpNyR9aj/wC0dTG4YQFmXGzjG7AG/mv0+/c1T+K0zWvKhrQ21PD2ibBydrHy7HM2Nip3ta39dNn8OaNhDEH2ZYYgw7BgouL1mfAOGS63WLqJYnhx5RIuxzkVgb2JIHQfzWzcO05Rd+p639a2YIaW2czysiqtIXijsKUrtFajIFFFFABXDXaKAOVH6jSZEm3W/wDNSNcpARA0H+WlotFbtUjRRoexvFp7UqqV7opiPNq7XaKAOWotXaKAPOArzyV9BSlFACDaRD1UV4bh0Z6qKdUUaAZHhMJ/YK8HgsB/YP8AapCilpBsYf2LB/4lPvR/Yun/APDH/wDmn9FLSHsbw6KJPgjRfZRTmuUVLQjtFFFABRRRQB//2Q==',
+        serie_quimica: 'metais de transição',
         eletronegatividade: '1,9',
-        amostra_texto: "<p> 'O cobre, localizado no grupo I-B, é encontrado na natureza na forma de calcopirita CuFeS2, este composto apresenta um teor muito alto de metal. O cobre desde a antiguidade foi muito utilizado, pesquisadores afirmam que a mineração do cobre tenha se iniciado há cerca de 5.000 anos a. C. Além disso, destaca-se que podemos encontrar o cobre como,  Cu(I), Cu(II), Cu (III) ou Cu (IV), sendo o único elemento da primeira linha do bloco d que apresenta o estado de oxidação +1 estável. </p> "
+        amostra_texto: "<p> 'O cobre, localizado no grupo I-B, é encontrado na natureza na forma de calcopirita CuFeS<sub>2</sub>, este composto apresenta um teor muito alto de metal. O cobre desde a antiguidade foi muito utilizado, pesquisadores afirmam que a mineração do cobre tenha se iniciado há cerca de 5.000 anos a. C. Além disso, destaca-se que podemos encontrar o cobre como,  Cu(I), Cu(II), Cu (III) ou Cu (IV), sendo o único elemento da primeira linha do bloco d que apresenta o estado de oxidação +1 estável. </p> "
     },
 
 
     element_30: {
         nome: 'zinco',
-        massa_atômica: '65,41',
-        ponto_de_fusão: '420°C',
-        ponto_de_ebulição: '907°C',
+        massa_atomica: '65,41',
+        ponto_de_fusao: '420°C',
+        ponto_de_ebulicao: '907°C',
         de: '4s² 3d¹⁰',
-        img_atom: 'https://pt.wikipedia.org/wiki/Zinco#/media/Ficheiro:Zinc_fragment_sublimed_and_1cm3_cube.jpg',
-        série_química: 'metais de transição',
+        img_atom: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Zinc_fragment_sublimed_and_1cm3_cube.jpg/230px-Zinc_fragment_sublimed_and_1cm3_cube.jpg',
+        serie_quimica: 'metais de transição',
         eletronegatividade: '1,6',
-        amostra_texto: "<p> O metal zinco é conhecido há pelo menos dois mil anos, sendo as primeiras grandes as responsáveis por identificá-lo como um metal diferente dos demais disponíveis à época. O zinco pode ser extraído de diversos minerais, sendo a calamina (silicato que contém zinco), a blenda (sulfato de zinco – ZnS) e a smithsonita (carbonato de zinco – ZnCO3) alguns dos principais. Seus isótopos  estáveis na natureza são 4, Zinco-64, Zinco-66, Zinco-67, e Zinco-68. fora isso destacamos que se tem 22 radioisótopos. </p>"
+        amostra_texto: "<p> O metal zinco é conhecido há pelo menos dois mil anos. O zinco pode ser extraído de diversos minerais, sendo a calamina (silicato que contém zinco), a blenda (sulfato de zinco – ZnS) e a smithsonita (carbonato de zinco – ZnCO3) alguns dos principais. Seus isótopos  estáveis na natureza são 4, Zinco-64, Zinco-66, Zinco-67, e Zinco-68. fora isso destacamos que se tem 22 radioisótopos. </p>"
     },
 
     element_31: {
         nome: 'gálio',
-        massa_atômica: '69,72',
-        ponto_de_fusão: '30°C',
-        ponto_de_ebulição: '2403°C',
+        massa_atomica: '69,72',
+        ponto_de_fusao: '30°C',
+        ponto_de_ebulicao: '2403°C',
         de: '4s² 3d¹⁰ 4p¹',
-        img_atom: 'https://pt.wikipedia.org/wiki/G%C3%A1lio#/media/Ficheiro:Gallium_crystals.jpg',
-        série_química: 'metais representativos',
+        img_atom: 'data:image/jpeg;base64,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',
+        serie_quimica: 'metais representativos',
         eletronegatividade: '1,8',
         amostra_texto: ' <p> O gálio é o metal com menor ponto de fusão de todos os já conhecidos, o mesmo é capaz de derreter se em contato com as mãos, mas o elemento que não necessariamente obtém o menor ponto de ebulição, além disso, é semicondutor de eletricidade e conduz o calor 2 vezes menos que o ferro. Na medicina nuclear o gálio é um “traçador” para diagnósticos de enfermidades inflamatórias, tumores, entre outros. </p>'
     },
 
     element_32: {
         nome: 'germânio',
-        massa_atômica: '72,64',
-        ponto_de_fusão: '937°C',
-        ponto_de_ebulição: '2830°C',
+        massa_atomica: '72,64',
+        ponto_de_fusao: '937°C',
+        ponto_de_ebulicao: '2830°C',
         de: '4s² 3d¹⁰ 4p²',
-        img_atom: 'https://pt.wikipedia.org/wiki/Germ%C3%A2nio#/media/Ficheiro:Polycrystalline-germanium.jpg',
-        série_química: 'metais representativos',
+        img_atom: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Polycrystalline-germanium.jpg',
+        serie_quimica: 'metais representativos',
         eletronegatividade: '2,0',
         amostra_texto: ' <p> O germânio na natureza não é encontrado sob forma elementar, e sim como componente de minérios complexos, um exemplo é a germanita. O mesmo em forma de elemento se oxida lentamente para GeO2, logo, seu estado de oxidação ocorre principalmente em +4, embora sejam conhecidos muitos compostos com o estado de oxidação +2. Uma curiosidade de sua história é que o elemento foi previsto por Mendeleev com uma incrível precisão, nem sequer havendo vestígios de sua existência.</p>'
     },
 
     element_33: {
         nome: 'arsênio',
-        massa_atômica: '74,92',
-        ponto_de_fusão: '817°C',
-        ponto_de_ebulição: "887°C",
+        massa_atomica: '74,92',
+        ponto_de_fusao: '817°C',
+        ponto_de_ebulicao: "887°C",
         de: '4s² 3d¹⁰ 4p³',
-        img_atom: 'https://pt.wikipedia.org/wiki/Ars%C3%AAnio#/media/Ficheiro:Arsen_1a.jpg',
-        série_química: 'não-metais representativos',
+        img_atom: 'data:image/jpeg;base64,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',
+        serie_quimica: 'não-metais representativos',
         eletronegatividade: '2,1',
         amostra_texto: ' <p> Do nome derivado do latim, o arsênio é um elemento que é estudado desde a antiguidade e desde lá eram notados seus efeitos tóxicos, irritantes e corrosivos. As aplicações do arsênio são muitas, dentre elas conservante de couro e madeira, mas como seu uso é tóxico ele vem diminuindo muito. Um destaque é o isótopo arsênio-73 que é usado como traçador para estimar a quantidade de arsênio absorvido pelo organismo e o arsênio-74 na localização de possíveis tumores cerebrais. </p> '
     },
@@ -942,60 +942,60 @@ let obj = {
 
     element_34: {
         nome: 'Selênio',
-        massa_atômica: '78,96',
-        ponto_de_fusão: '221°C',
-        ponto_de_ebulição: '687°C',
+        massa_atomica: '78,96',
+        ponto_de_fusao: '221°C',
+        ponto_de_ebulicao: '687°C',
         de: '4s² 3d¹⁰ 4p⁴',
-        img_atom: 'https://pt.wikipedia.org/wiki/Sel%C3%AAnio#/media/Ficheiro:SeBlackRed.jpg',
-        série_química: 'não-metais representativos',
+        img_atom: 'https://upload.wikimedia.org/wikipedia/commons/4/47/SeBlackRed.jpg',
+        serie_quimica: 'não-metais representativos',
         eletronegatividade: '2,5',
         amostra_texto: ' <p> O elemento selênio que obtém a coloração do elemento diretamente ligada com suas formas alotrópicas, sendo a mais estável, a cristalina hexagonal que apresenta uma cor cinza metalizada, é obtido como subproduto a partir de resíduos da purificação eletrolítica de metais nobres em âmbito industrial . O elemento tem 28 isótopos, dos quais 5 são estáveis, além disso o elemento é considerado perigoso para o meio ambiente, por isso seus compostos devem ser armazenados em locais secos. </p>'
     },
 
     element_35: {
         nome: 'Bromo',
-        massa_atômica: "79,90",
-        ponto_de_fusão: "-7°C",
-        ponto_de_ebulição: "58°C",
+        massa_atomica: "79,90",
+        ponto_de_fusao: "-7°C",
+        ponto_de_ebulicao: "58°C",
         de: "4s² 3d¹⁰ 4p⁵",
-        img_atom: 'https://www.tabelaperiodicacompleta.com/elemento-quimico/bromo/',
-        série_química: 'não-metais representativos',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fnews.bbcimg.co.uk%2Fmedia%2Fimages%2F77855000%2Fjpg%2F_77855181_bromine624.jpg&f=1&nofb=1',
+        serie_quimica: 'não-metais representativos',
         eletronegatividade: '2,9',
         amostra_texto: ' <p> O bromo que por sua vez não é encontrado no estado elementar na natureza, e sim em forma de sais é extraído comercialmente dos oceanos, destaque para a bromargirita (AgBr) que é um dos principais minerais que contém o bromo. Na natureza são encontrados dois isótopos, os: 79Br e 81Br. </p>'
     },
 
     element_36: {
         nome: 'Criptônio',
-        massa_atômica: '83,80',
-        ponto_de_fusão: '- 157°C',
-        ponto_de_ebulição: '-153°C',
+        massa_atomica: '83,80',
+        ponto_de_fusao: '- 157°C',
+        ponto_de_ebulicao: '-153°C',
         de: '4s² 3d¹⁰ 4p⁶',
-        img_atom: 'https://pt.wikipedia.org/wiki/Cr%C3%ADpton#/media/Ficheiro:Krypton-glow.jpg',
-        série_química: 'Gases Nobres',
+        img_atom: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Krypton-glow.jpg',
+        serie_quimica: 'Gases Nobres',
         eletronegatividade: '--',
         amostra_texto: ' <p> O criptônio que é um gás monoatômico, em que dificilmente se liquefaz, apresenta um espectro de linhas verde e vermelha-alaranjada muito brilhante, o mesmo está presente na atmosfera na proporção de uma parte para 9.000.000, isso quer dizer que sua proporção entre os elementos presentes no planeta é bastante pequena. O mesmo tem características como: ser incolor, inodoro, insípido, e de pequena reatividade, além disso, o crípton natural é constituído por 6 isótopos. </p>'
     },
 
     element_37: {
         nome: 'rubídio',
-        massa_atômica: '85,47',
-        ponto_de_fusão: '39°C',
-        ponto_de_ebulição: '688°C',
+        massa_atomica: '85,47',
+        ponto_de_fusao: '39°C',
+        ponto_de_ebulicao: '688°C',
         de: '5s¹',
-        img_atom: 'https://www.manualdaquimica.com/quimica-geral/rubidio-rb.htm',
-        série_química: 'metais alcalinos',
+        img_atom: 'https://upload.wikimedia.org/wikipedia/commons/e/e9/Rubidiumsample.JPG',
+        serie_quimica: 'metais alcalinos',
         eletronegatividade: '0,8',
         amostra_texto: ' <p> O elemento rubídio que teve sua descoberta na década de 1760, é utilizado majoritariamente no setor de pesquisa de novas tecnologias, embora encontremos utilizações mais fajutas de seus compostos, um exemplo é o nitrato de rubídio, utilizado na indústria de fogos de artifício, que fornece a cor púrpura ao ser queimado. Do mesmo existem 24 isótopos, sendo apenas dois da natureza, o Rb-85 e o Rb-87, que por sua vez é radioativo. </p>'
     },
 
     element_38: {
         nome: 'estrôncio',
-        massa_atômica: '87,62',
-        ponto_de_fusão: '770°C',
-        ponto_de_ebulição: '1380°C',
+        massa_atomica: '87,62',
+        ponto_de_fusao: '770°C',
+        ponto_de_ebulicao: '1380°C',
         de: '5s²',
-        img_atom: 'https://tabelaperiodicaifspcatanduva.wordpress.com/2018/04/08/estroncio/',
-        série_química: 'metais alcalino terrosos',
+        img_atom: 'data:image/jpeg;base64,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',
+        serie_quimica: 'metais alcalino terrosos',
         eletronegatividade: '1,0',
         amostra_texto: ' <p> O elemento estrôncio é um metal mole, de aspecto prateado e que reage com o oxigênio do ar, produzindo sobre o metal uma fina camada amarela de óxido de estrôncio (SrO), o mesmo obtem minerais como a estroncianita (SrCO3) e a celestita (SrS). O elemento tem como isótopo radioativo o (Sr90) que apresenta a propriedade de emitir a radiação beta. </p>'
     },
@@ -1004,12 +1004,12 @@ let obj = {
 
     element_39: {
         nome: 'Ítrio',
-        massa_atômica: '88,91',
-        ponto_de_fusão: '1526°C',
-        ponto_de_ebulição: '2927°C',
+        massa_atomica: '88,91',
+        ponto_de_fusao: '1526°C',
+        ponto_de_ebulicao: '2927°C',
         de: '5s² 4d¹',
-        img_atom: 'https://www.infoescola.com/wp-content/uploads/2017/05/itrio-496306903.jpg',
-        série_química: 'metais de transição',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.65CxcqJOkDDu32uuG8I9eQHaE8%26pid%3DApi&f=1',
+        serie_quimica: 'metais de transição',
         eletronegatividade: '1,2',
         amostra_texto: '<p> Atualmente o ítrio metálico é extraído dos minérios monazita e bastnasita, embora a ocorrência de ítrio seja comum em outros lugares, aliás, pesquisas afirmam que rochas lunares obtêm quantidades razoáveis desse elemento. O isótopo do ítrio, o Y90 possui aplicações na medicina nuclear, em especial nos tratamentos de câncer, oss compostos desse elemento dificilmente são encontrados pelos seres humanos, entretanto, é importante destacar que eles são altamente tóxicos. <p/>'
     },
@@ -1022,7 +1022,7 @@ let obj = {
         ponto_de_fusao: "1852ºC",
         ponto_de_ebulicao: "3580°C",
         de: " 5s² 4d²",
-        img_atom: "https://pt.wikipedia.org/wiki/Zirc%C3%B4nio#/media/Ficheiro:Zirconium_crystal_bar_and_1cm3_cube.jpg ",
+        img_atom: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Zirconium_crystal_bar_and_1cm3_cube.jpg/1200px-Zirconium_crystal_bar_and_1cm3_cube.jpg",
         serie_quimica: "Metais de Transição",
         eletronegatividade: "1,3",
         amostra_texto: "<p> O zircônio é um metal possuidor de propriedades semelhantes a do titânio, sendo um metal de transição, apesar de sua pouca reatividade química, o metal é amplamente utilizado industrialmente, seu maior uso está concentrado nas usinas nucleares que por virtude de sua baixa capacidade de absorção de nêutrons o metal é utilizado para revestir internamente os reatores nucleares evitando o desperdício de combustível nuclear, facilitando a movimentação dos nêutrons. Na natureza são encontrados quatro isótopos estáveis e um radioisótopo de grande vida média (Zircônio-96). </p>"
@@ -1034,7 +1034,7 @@ let obj = {
         ponto_de_fusao: "2168°C",
         ponto_de_ebulicao: "4930°C",
         de: "5s¹ 4d⁴",
-        img_atom: "https://brasilescola.uol.com.br/quimica/niobio.htm",
+        img_atom: "https://s1.static.brasilescola.uol.com.br/be/conteudo/images/niobio.jpg",
         serie_quimica: "Metais de Transição",
         eletronegatividade: "1,6",
         amostra_texto: "<p> O nióbio, elemento em que o Brasil é o maior detentor do mundo, sendo responsável por mais de 90% da produção, é um elemento de natureza existente e é composto de um isótopo estável, o 93Nb,  o metal tem uma coloração azulada quando exposto ao ar em temperatura ambiente por um longo tempo. </p>"
@@ -1046,7 +1046,7 @@ let obj = {
         ponto_de_fusao: "2617°C",
         ponto_de_ebulicao: "5560°C",
         de: "5s¹ 4d⁵",
-        img_atom: "https://gestagro360.com.br/2019/07/28/artigo-a-importancia-do-molibdenio-para-a-garantia-do-manejo-nutricional-no-algodao/ ",
+        img_atom: " https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Molybdenum_crystaline_fragment_and_1cm3_cube.jpg/1200px-Molybdenum_crystaline_fragment_and_1cm3_cube.jpg",
         serie_quimica: "Metais de Transição",
         eletronegatividade: "2,1",
         amostra_texto: "<p> O molibdênio é um dos poucos elementos de transição externa classificado dentre os elementos essenciais para o funcionamento do organismo humano. O mesmo, tem a maioria dos compostos com solubilidade em água, o mesmo tem 6 isótopos  estáveis e cerca de duas dezenas de radioisótopos,. o 99Mo inclusive é usado em geradores de 99Mo / 99mTc para a indústria de isótopos nucleares. </p>"
@@ -1058,7 +1058,7 @@ let obj = {
         ponto_de_fusao: "2200°C",
         ponto_de_ebulicao: "--",
         de: "5s² 4d⁵",
-        img_atom: "https://www.tabelaperiodicacompleta.com/wp-content/uploads/2012/08/Tc43.jpg",
+        img_atom: "http://www.tabelaperiodicacompleta.com/wp-content/uploads/2012/08/Tc43.jpg",
         serie_quimica: "Metais de Transição",
         eletronegatividade: "1,9",
         amostra_texto: "<p> O tecnecio apresenta todos seus isótopos radioactivos, tendo sido o primeiro elemento a ser produzido artificialmente. Seus nox mais comuns são +2, +4, +5, +6 e +7, o mesmo, poderia apresentar várias aplicações como, por exemplo, em aços protegendo-os da corrosão, porém devido a problemas com a sua produção (em reatores nucleares), estas aplicações são muito limitadas. Podemos citar o  Tc99 como um subproduto. </p>"
@@ -1082,7 +1082,7 @@ let obj = {
         ponto_de_fusao: "1965°C",
         ponto_de_ebulicao: "3720°C",
         de: "5s¹ 4d⁸",
-        img_atom: "https://www.minasjr.com.br/rodio-o-metal-mais-precioso/",
+        img_atom: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Rhodium_powder_pressed_melted.jpg/250px-Rhodium_powder_pressed_melted.jpg",
         serie_quimica: "Metais de Transição",
         eletronegatividade: "2,2",
         amostra_texto: "<p> O ródio, que tem como as principais características sendo um metal duro, brilhante e de coloração prateada, ademais que é um sólido à temperatura ambiente e tem como seu principal isótopo o Rh103. Suas principais aplicações são conversões catalíticas nos automóveis e catalisador em reações de hidrogenação, passando por recobrimento de fios de fibra óptica. A produção anual mundial deste elemento é de três toneladas sendo ele obtido comercialmente a partir de níquel e chumbo.</p>"
@@ -1094,7 +1094,7 @@ let obj = {
         ponto_de_fusao: "1555°C",
         ponto_de_ebulicao: "3027°C",
         de: "5s⁰ 4d¹⁰",
-        img_atom: "https://pt.dreamstime.com/o-pal%C3%A1dio-%C3%A9-um-elemento-qu%C3%ADmico-que-%C3%A0-temperatura-ambiente-se-contrai-no-estado-s%C3%B3lido-metais-utilizados-na-ind%C3%BAstria-image199623929 ",
+        img_atom: "https://upload.wikimedia.org/wikipedia/commons/2/23/Palladium.jpg",
         serie_quimica: "Metais de Transição",
         eletronegatividade: "2,2",
         amostra_texto: "<p> O metal paládio que apresenta retículo cristalino com arranjo do tipo cúbico de faces centradas (cfc), tem o como o nox mais comum o +2 e +4, embora +1 e +6 também sejam observados. Uma curiosidade é que no filme 'Homem de Ferro' o paládio é o metal usado por Tony Stark para manter fragmentos de metal longe de seu coração.</p>"
@@ -1106,7 +1106,7 @@ let obj = {
         ponto_de_fusao: "961°C",
         ponto_de_ebulicao: "2212°C",
         de: "5s¹ 4d¹⁰",
-        img_atom: "https://www.tabelaperiodicacompleta.com/elemento-quimico/prata/",
+        img_atom: "http://www.tabelaperiodicacompleta.com/wp-content/uploads/2013/01/prata.jpg",
         serie_quimica: "Metais de Transição",
         eletronegatividade: "1,9",
         amostra_texto: "<p> A prata que é um dos elementos mais conhecidos do mundo teve seus primeiros registros desde os primórdios da humanidade, isso em alguns utensílios e ornamentos, inclusive durante certo tempo, a mesma, foi considerado mais valioso que o ouro e também utilizado como moeda. Seus isótopos estáveis são o Ag107 e o Ag109, tendo também 3 deles radioativos.</p>"
@@ -1510,7 +1510,7 @@ let obj = {
         ponto_de_fusao: '-39°C',
         ponto_de_ebulicao: '357°C',
         de: '6s<sup>2</sup>4f<sup>14</sup>5d<sup>10</sup>',
-        img_atom: ' https://diariodonaturalista.com.br/wp-content/uploads/2021/08/mercurio-metal.jpg',
+        img_atom: 'https://upload.wikimedia.org/wikipedia/commons/4/48/HGmer.JPG',
         serie_quimica: 'Metal de transição',
         eletronegatividade: '1,9',
         amostra_texto: '<p> É um metal de coloração prateada, é um bom condutor elétrico apesar de não ser um bom condutor de calor, possui alta densidade é o único metal que se encontra no estado físico líquido na temperatura ambiente. Sob efeito de altas temperaturas desprende gases tóxicos e corrosivos, e é tóxico para seres vivos quando ingerido. É usado na fabricação de espelhos e termômetros.</p>'
@@ -1638,7 +1638,7 @@ let obj = {
         ponto_de_fusao: '1755°C',
         ponto_de_ebulicao: '4500°C',
         de: '7s<sup>2</sup>6d<sup>2</sup>',
-        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.dnuIDR-q2jO5WvaCdMBXagHaGA%26pid%3DApi&f=1',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.mQ-qofex1QTTcQrnk_89fgHaG8%26pid%3DApi&f=1',
         serie_quimica: 'Actinóides',
         eletronegatividade: '1,3',
         amostra_texto: '<p>É sólido de coloração branco-prateada brilhante, ou acinzentada quando exposto ao ar, também é um condutor intermediário tanto de calor quanto de eletricidade. É pouco radioativo, mas mesmo assim oferece riscos ao organismo humano. Empregado em ligas metálicas, na produção de utensílios fotoelétricos e termoelétricos e como catalisador.  </p>'
@@ -1887,7 +1887,7 @@ let obj = {
         img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.ga3kGs1AVAk9In1JpTmbhQHaMF%26pid%3DApi&f=1',
         serie_quimica: 'Metais de Transição',
         eletronegatividade: '--',
-        amostra_texto: 'Batizado em homenagem a cidade no qual este elemento foi descoberto, '
+        amostra_texto: 'Batizado em homenagem a cidade no qual este elemento foi descoberto, a previsão das prováveis ​​propriedades químicas do darmstádtio não têm recebido muita atenção recentemente. O Ds é esperado ser um metal nobre, não muito radioativo.'
     },
 
     element_111: {
@@ -1920,10 +1920,10 @@ let obj = {
         ponto_de_fusao: '--°C',
         ponto_de_ebulicao: '--°C',
         de: '7s<sup>2</sup>5f<sup>14</sup>6d<sup>0</sup>7p<sup>1</sup>',
-        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.1b0G8iaKt5BLZv0T8DJ07AEsCd%26pid%3DApi&f=1',
+        img_atom: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Oct6wYjDe1vDtWh3TJT3UQHaGR%26pid%3DApi&f=1',
         serie_quimica: 'Metais Representativos',
         eletronegatividade: '--',
-        amostra_texto: 'O nipônio é o primeiro átomo a ter elétron em 7p, e é o mais pesado da família 3A. O Nh deve retratar propriedades químicas similares ás do tálio'
+        amostra_texto: 'O nipônio é o primeiro átomo a ter elétron em 7p, e é o mais pesado da família 3A. O Nh deve retratar propriedades químicas similares ás do tálio, e tem esse nome em homenagem ao país do Japão.'
     },
 
     element_114: {
@@ -2005,10 +2005,10 @@ var FazerTudo = function(element) { // Colocando as informações nas laterais
     ClearTable()
 
 
-    nome_do_elemento.insertAdjacentText("afterbegin", element.nome);
+    nome_do_elemento.insertAdjacentText("afterbegin", capitalize(element.nome));
     distr.insertAdjacentHTML("afterbegin", element.de);
     massa_atomica.insertAdjacentText("afterbegin", element.massa_atomica);
-    serie_quimica.insertAdjacentText("afterbegin", element.serie_quimica);
+    serie_quimica.insertAdjacentText("afterbegin", capitalize(element.serie_quimica));
     eletronegatividade.insertAdjacentText("afterbegin", element.eletronegatividade);
     ponto_de_fusao.insertAdjacentText("afterbegin", element.ponto_de_fusao);
     ponto_de_ebulicao.insertAdjacentText("afterbegin", element.ponto_de_ebulicao);
@@ -2017,8 +2017,19 @@ var FazerTudo = function(element) { // Colocando as informações nas laterais
     var img = document.createElement("IMG");
     img.src = element.img_atom;
     document.getElementById('imagem-informacoes').appendChild(img);
-    amostra_texto.insertAdjacentHTML("afterbegin", element.amostra_texto);
+    try {
+        amostra_texto.insertAdjacentHTML("afterbegin", capitalize(element.amostra_texto));
+
+    } catch (e) {
+        console.error("rx");
+    }
+
+
 
     informacoes.classList.remove("n-display");
 
 };
+
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
